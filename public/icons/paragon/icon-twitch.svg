@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1024 1024"
+    role="img" aria-label="icon-twitch">
+  <g transform="translate(0,1024) scale(1,-1)">
+    <path d="M96 960 0 800V64H256V-64H384L512 64H672L960 352V960ZM832 416 672 256H512L384 128V256H192V832H832ZM608 704H704V448H608ZM416 704H512V448H416Z" fill="currentColor"/>
+  </g>
+</svg>

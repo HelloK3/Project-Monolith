@@ -1,0 +1,482 @@
+[
+  {
+    "name": "icon-Assassin",
+    "unicode": "U+E90B",
+    "file": "icon-assassin.svg"
+  },
+  {
+    "name": "icon-Caster",
+    "unicode": "U+E905",
+    "file": "icon-caster.svg"
+  },
+  {
+    "name": "icon-Fighter",
+    "unicode": "U+E906",
+    "file": "icon-fighter.svg"
+  },
+  {
+    "name": "icon-Melee",
+    "unicode": "U+E906",
+    "file": "icon-melee.svg"
+  },
+  {
+    "name": "icon-Ranged",
+    "unicode": "U+E909",
+    "file": "icon-ranged.svg"
+  },
+  {
+    "name": "icon-Ranger",
+    "unicode": "U+E909",
+    "file": "icon-ranger.svg"
+  },
+  {
+    "name": "icon-Support",
+    "unicode": "U+E90A",
+    "file": "icon-support.svg"
+  },
+  {
+    "name": "icon-Tank",
+    "unicode": "U+E918",
+    "file": "icon-tank.svg"
+  },
+  {
+    "name": "icon-ability",
+    "unicode": "U+E914",
+    "file": "icon-ability.svg"
+  },
+  {
+    "name": "icon-agora-energyPierce",
+    "unicode": "U+0E69",
+    "file": "icon-agora-energypierce.svg"
+  },
+  {
+    "name": "icon-arrow-left",
+    "unicode": "U+E911",
+    "file": "icon-arrow-left.svg"
+  },
+  {
+    "name": "icon-arrow-right",
+    "unicode": "U+E911",
+    "file": "icon-arrow-right.svg"
+  },
+  {
+    "name": "icon-arrowLeft",
+    "unicode": "U+E93C",
+    "file": "icon-arrowleft.svg"
+  },
+  {
+    "name": "icon-arrowRight",
+    "unicode": "U+E93D",
+    "file": "icon-arrowright.svg"
+  },
+  {
+    "name": "icon-assassin",
+    "unicode": "U+E90B",
+    "file": "icon-assassin.svg"
+  },
+  {
+    "name": "icon-attr-abilityDamage",
+    "unicode": "U+0E68",
+    "file": "icon-attr-abilitydamage.svg"
+  },
+  {
+    "name": "icon-attr-atkspd",
+    "unicode": "U+0E61",
+    "file": "icon-attr-atkspd.svg"
+  },
+  {
+    "name": "icon-attr-cdr",
+    "unicode": "U+0E64",
+    "file": "icon-attr-cdr.svg"
+  },
+  {
+    "name": "icon-attr-cleave",
+    "unicode": "U+0E63",
+    "file": "icon-attr-cleave.svg"
+  },
+  {
+    "name": "icon-attr-cooldownReduction",
+    "unicode": "U+0E64",
+    "file": "icon-attr-cooldownreduction.svg"
+  },
+  {
+    "name": "icon-attr-critChance",
+    "unicode": "U+0E65",
+    "file": "icon-attr-critchance.svg"
+  },
+  {
+    "name": "icon-attr-critStikeDamage",
+    "unicode": "U+0E66",
+    "file": "icon-attr-critstikedamage.svg"
+  },
+  {
+    "name": "icon-attr-enar",
+    "unicode": "U+0E67",
+    "file": "icon-attr-enar.svg"
+  },
+  {
+    "name": "icon-attr-endmg",
+    "unicode": "U+0E68",
+    "file": "icon-attr-endmg.svg"
+  },
+  {
+    "name": "icon-attr-energyArmor",
+    "unicode": "U+0E67",
+    "file": "icon-attr-energyarmor.svg"
+  },
+  {
+    "name": "icon-attr-hp",
+    "unicode": "U+0E75",
+    "file": "icon-attr-hp.svg"
+  },
+  {
+    "name": "icon-attr-hpreg",
+    "unicode": "U+0E71",
+    "file": "icon-attr-hpreg.svg"
+  },
+  {
+    "name": "icon-attr-juggernaut",
+    "unicode": "U+0E72",
+    "file": "icon-attr-juggernaut.svg"
+  },
+  {
+    "name": "icon-attr-lfstl",
+    "unicode": "U+0E73",
+    "file": "icon-attr-lfstl.svg"
+  },
+  {
+    "name": "icon-attr-lifeSteal",
+    "unicode": "U+0E73",
+    "file": "icon-attr-lifesteal.svg"
+  },
+  {
+    "name": "icon-attr-manaRegen",
+    "unicode": "U+0E74",
+    "file": "icon-attr-manaregen.svg"
+  },
+  {
+    "name": "icon-attr-maxHealth",
+    "unicode": "U+0E75",
+    "file": "icon-attr-maxhealth.svg"
+  },
+  {
+    "name": "icon-attr-mp",
+    "unicode": "U+0E76",
+    "file": "icon-attr-mp.svg"
+  },
+  {
+    "name": "icon-attr-mpreg",
+    "unicode": "U+0E74",
+    "file": "icon-attr-mpreg.svg"
+  },
+  {
+    "name": "icon-attr-physar",
+    "unicode": "U+0E78",
+    "file": "icon-attr-physar.svg"
+  },
+  {
+    "name": "icon-attr-physdmg",
+    "unicode": "U+0E79",
+    "file": "icon-attr-physdmg.svg"
+  },
+  {
+    "name": "icon-attr-physicalPierce",
+    "unicode": "U+0E80",
+    "file": "icon-attr-physicalpierce.svg"
+  },
+  {
+    "name": "icon-attr-physpen",
+    "unicode": "U+0E82",
+    "file": "icon-attr-physpen.svg"
+  },
+  {
+    "name": "icon-attr-poison",
+    "unicode": "U+0E81",
+    "file": "icon-attr-poison.svg"
+  },
+  {
+    "name": "icon-attr-shieldPierce",
+    "unicode": "U+0E82",
+    "file": "icon-attr-shieldpierce.svg"
+  },
+  {
+    "name": "icon-attr-shld",
+    "unicode": "U+0E78",
+    "file": "icon-attr-shld.svg"
+  },
+  {
+    "name": "icon-attr-spd",
+    "unicode": "U+0E77",
+    "file": "icon-attr-spd.svg"
+  },
+  {
+    "name": "icon-attr-stasis",
+    "unicode": "U+0E86",
+    "file": "icon-attr-stasis.svg"
+  },
+  {
+    "name": "icon-attr-stun",
+    "unicode": "U+0E87",
+    "file": "icon-attr-stun.svg"
+  },
+  {
+    "name": "icon-attr-travelSpeed",
+    "unicode": "U+0E88",
+    "file": "icon-attr-travelspeed.svg"
+  },
+  {
+    "name": "icon-bin2",
+    "unicode": "U+E9AD",
+    "file": "icon-bin2.svg"
+  },
+  {
+    "name": "icon-caster",
+    "unicode": "U+E905",
+    "file": "icon-caster.svg"
+  },
+  {
+    "name": "icon-chat",
+    "unicode": "U+E912",
+    "file": "icon-chat.svg"
+  },
+  {
+    "name": "icon-close",
+    "unicode": "U+E90E",
+    "file": "icon-close.svg"
+  },
+  {
+    "name": "icon-danger",
+    "unicode": "U+E919",
+    "file": "icon-danger.svg"
+  },
+  {
+    "name": "icon-difficulty",
+    "unicode": "U+E915",
+    "file": "icon-difficulty.svg"
+  },
+  {
+    "name": "icon-facebook",
+    "unicode": "U+EA90",
+    "file": "icon-facebook.svg"
+  },
+  {
+    "name": "icon-facebook2",
+    "unicode": "U+E91E",
+    "file": "icon-facebook2.svg"
+  },
+  {
+    "name": "icon-fighter",
+    "unicode": "U+E906",
+    "file": "icon-fighter.svg"
+  },
+  {
+    "name": "icon-filter",
+    "unicode": "U+E91D",
+    "file": "icon-filter.svg"
+  },
+  {
+    "name": "icon-gallery",
+    "unicode": "U+E93F",
+    "file": "icon-gallery.svg"
+  },
+  {
+    "name": "icon-gold",
+    "unicode": "U+E943",
+    "file": "icon-gold.svg"
+  },
+  {
+    "name": "icon-google",
+    "unicode": "U+E910",
+    "file": "icon-google.svg"
+  },
+  {
+    "name": "icon-google-plus",
+    "unicode": "U+E910",
+    "file": "icon-google-plus.svg"
+  },
+  {
+    "name": "icon-grid",
+    "unicode": "U+E90D",
+    "file": "icon-grid.svg"
+  },
+  {
+    "name": "icon-hamburger",
+    "unicode": "U+E913",
+    "file": "icon-hamburger.svg"
+  },
+  {
+    "name": "icon-hex-play",
+    "unicode": "U+E917",
+    "file": "icon-hex-play.svg"
+  },
+  {
+    "name": "icon-hex-play-fill",
+    "unicode": "U+E923",
+    "file": "icon-hex-play-fill.svg"
+  },
+  {
+    "name": "icon-info",
+    "unicode": "U+EA0C",
+    "file": "icon-info.svg"
+  },
+  {
+    "name": "icon-instagram",
+    "unicode": "U+E91B",
+    "file": "icon-instagram.svg"
+  },
+  {
+    "name": "icon-link-external",
+    "unicode": "U+E907",
+    "file": "icon-link-external.svg"
+  },
+  {
+    "name": "icon-melee",
+    "unicode": "U+E906",
+    "file": "icon-melee.svg"
+  },
+  {
+    "name": "icon-more",
+    "unicode": "U+E941",
+    "file": "icon-more.svg"
+  },
+  {
+    "name": "icon-ornament",
+    "unicode": "U+E93E",
+    "file": "icon-ornament.svg"
+  },
+  {
+    "name": "icon-playTriangle",
+    "unicode": "U+E942",
+    "file": "icon-playtriangle.svg"
+  },
+  {
+    "name": "icon-ranged",
+    "unicode": "U+E909",
+    "file": "icon-ranged.svg"
+  },
+  {
+    "name": "icon-ranger",
+    "unicode": "U+E909",
+    "file": "icon-ranger.svg"
+  },
+  {
+    "name": "icon-refresh",
+    "unicode": "U+E800",
+    "file": "icon-refresh.svg"
+  },
+  {
+    "name": "icon-ruble",
+    "unicode": "U+20BD",
+    "file": "icon-ruble.svg"
+  },
+  {
+    "name": "icon-share",
+    "unicode": "U+EA82",
+    "file": "icon-share.svg"
+  },
+  {
+    "name": "icon-share2",
+    "unicode": "U+EA82",
+    "file": "icon-share2.svg"
+  },
+  {
+    "name": "icon-skins",
+    "unicode": "U+E916",
+    "file": "icon-skins.svg"
+  },
+  {
+    "name": "icon-status-bleed",
+    "unicode": "U+0E62",
+    "file": "icon-status-bleed.svg"
+  },
+  {
+    "name": "icon-status-burn",
+    "unicode": "U+0E70",
+    "file": "icon-status-burn.svg"
+  },
+  {
+    "name": "icon-status-cd",
+    "unicode": "U+0E64",
+    "file": "icon-status-cd.svg"
+  },
+  {
+    "name": "icon-status-gold",
+    "unicode": "U+E943",
+    "file": "icon-status-gold.svg"
+  },
+  {
+    "name": "icon-status-root",
+    "unicode": "U+0E85",
+    "file": "icon-status-root.svg"
+  },
+  {
+    "name": "icon-status-slnc",
+    "unicode": "U+0E83",
+    "file": "icon-status-slnc.svg"
+  },
+  {
+    "name": "icon-status-slow",
+    "unicode": "U+0E84",
+    "file": "icon-status-slow.svg"
+  },
+  {
+    "name": "icon-status-slowed",
+    "unicode": "U+0E84",
+    "file": "icon-status-slowed.svg"
+  },
+  {
+    "name": "icon-status-snared",
+    "unicode": "U+0E85",
+    "file": "icon-status-snared.svg"
+  },
+  {
+    "name": "icon-status-stun",
+    "unicode": "U+0E87",
+    "file": "icon-status-stun.svg"
+  },
+  {
+    "name": "icon-status-weak",
+    "unicode": "U+E939",
+    "file": "icon-status-weak.svg"
+  },
+  {
+    "name": "icon-support",
+    "unicode": "U+E90A",
+    "file": "icon-support.svg"
+  },
+  {
+    "name": "icon-sword",
+    "unicode": "U+E940",
+    "file": "icon-sword.svg"
+  },
+  {
+    "name": "icon-tank",
+    "unicode": "U+E918",
+    "file": "icon-tank.svg"
+  },
+  {
+    "name": "icon-twitch",
+    "unicode": "U+E904",
+    "file": "icon-twitch.svg"
+  },
+  {
+    "name": "icon-twitter",
+    "unicode": "U+E91C",
+    "file": "icon-twitter.svg"
+  },
+  {
+    "name": "icon-vk",
+    "unicode": "U+E91A",
+    "file": "icon-vk.svg"
+  },
+  {
+    "name": "icon-warning",
+    "unicode": "U+EA07",
+    "file": "icon-warning.svg"
+  },
+  {
+    "name": "icon-youtube",
+    "unicode": "U+E90C",
+    "file": "icon-youtube.svg"
+  }
+]

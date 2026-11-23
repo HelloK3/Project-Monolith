@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1024 1024"
+    role="img" aria-label="icon-attr-abilityDamage">
+  <g transform="translate(0,1024) scale(1,-1)">
+    <path d="M502 534 598 928Q598 928 583 900Q567 873 540.5 830.0Q514 787 478 735Q443 683 403 634Q368 592 333 556Q297 520 267.5 494.0Q238 468 220 453Q202 438 202 438L528 355L422 -32Q422 -32 441 -1Q459 29 489.0 76.0Q519 123 559 180Q598 236 640 288Q705 365 765.5 411.5Q826 458 826 458L502 534Z" fill="currentColor"/>
+  </g>
+</svg>

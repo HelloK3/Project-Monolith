@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1024 1024"
+    role="img" aria-label="icon-attr-travelSpeed">
+  <g transform="translate(0,1024) scale(1,-1)">
+    <path d="M512 915 77 403 192 269 512 643 832 269 947 403ZM224 70 301 -19 512 227 723 -19 800 70 512 406Z" fill="currentColor"/>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1024 1024"
+    role="img" aria-label="icon-facebook">
+  <g transform="translate(0,1024) scale(1,-1)">
+    <path d="M608 768H768V960H608Q562 960 521 942Q480 925 449.5 894.5Q419 864 402 823Q384 782 384 736V640H256V448H384V-64H576V448H736L768 640H576V736Q576 749 585.5 758.5Q595 768 608 768Z" fill="currentColor"/>
+  </g>
+</svg>

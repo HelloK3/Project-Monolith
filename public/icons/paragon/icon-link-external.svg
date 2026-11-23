@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 768 1024"
+    role="img" aria-label="icon-link-external">
+  <g transform="translate(0,1024) scale(1,-1)">
+    <path d="M640 192H128V702L256 704V832H0V64H768V384H640ZM384 832 512 704 320 512 448 384 640 576 768 448V832Z" fill="currentColor"/>
+  </g>
+</svg>
