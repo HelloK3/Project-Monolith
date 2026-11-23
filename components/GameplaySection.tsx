@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function GameplaySection() {
 	return (
 		<section id="gameplay" className="scroll-mt-16 relative overflow-hidden bg-[#0b0f14] px-6 py-24 md:py-32">
@@ -5,7 +7,7 @@ export default function GameplaySection() {
 				{/* Text */}
 				<div>
 					<p className="mb-4 text-sm uppercase tracking-[0.4em] text-amber-400">
-						The Battlefield
+						The Perspective
 					</p>
 
 					<h2 className="text-4xl font-bold uppercase tracking-wider text-white md:text-6xl">
@@ -25,13 +27,15 @@ export default function GameplaySection() {
 					</p>
 				</div>
 
-				{/* Visual Placeholder */}
+				{/* Environment art */}
 				<div className="relative aspect-video overflow-hidden border border-white/10 bg-white/[0.03]">
-					<div className="absolute inset-0 flex items-center justify-center">
-						<p className="text-sm uppercase tracking-[0.3em] text-white/30">
-							Gameplay Footage
-						</p>
-					</div>
+					<Image
+						src="/images/hero/monolith-hero-image.jpg"
+						alt="A moss-covered ruin in the Monolith jungle, lit by a glowing amber crystal"
+						fill
+						className="object-cover object-[40%_center]"
+						sizes="(max-width: 768px) 100vw, 50vw"
+					/>
 
 					<div className="absolute bottom-0 left-0 h-px w-1/3 bg-amber-400" />
 				</div>

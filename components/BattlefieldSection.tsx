@@ -18,26 +18,8 @@ export default function BattlefieldSection() {
 					</p>
 				</div>
 
-				{/* Map Placeholder */}
-				<div className="relative aspect-[16/8] overflow-hidden border border-white/10 bg-white/[0.02]">
-					<div className="absolute inset-0 flex items-center justify-center">
-						<div className="text-center">
-							<p className="text-sm uppercase tracking-[0.3em] text-white/30">
-								Monolith Battlefield
-							</p>
-
-							<p className="mt-3 text-xs uppercase tracking-widest text-white/20">
-								Interactive Map — Coming Later
-							</p>
-						</div>
-					</div>
-
-					<div className="absolute left-0 top-0 h-px w-1/4 bg-amber-400" />
-					<div className="absolute bottom-0 right-0 h-px w-1/4 bg-amber-400" />
-				</div>
-
 				{/* Lanes */}
-				<div className="mt-12 grid gap-px bg-white/10 md:grid-cols-3">
+				<div className="grid gap-px bg-white/10 md:grid-cols-3">
 					<BattlefieldCard
 						number="01"
 						title="Offlane"

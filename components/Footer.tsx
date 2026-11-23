@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { site } from "@/data/site";
 
 export default function Footer() {
 	return (
@@ -60,30 +61,34 @@ export default function Footer() {
 						</nav>
 					</div>
 
-					{/* Community */}
-					<div>
-						<p className="text-[10px] uppercase tracking-[0.3em] text-amber-400">
-							Community
-						</p>
-
-						<div className="mt-6">
-							<a
-								href="#"
-								className="group inline-flex items-center gap-3 border border-white/10 px-5 py-3 text-sm uppercase tracking-[0.15em] text-white/70 transition-all hover:border-amber-400/40 hover:text-white"
-							>
-								<span>Join the Discord</span>
-
-								<span className="text-amber-400 transition-transform duration-300 group-hover:translate-x-1">
-									→
-								</span>
-							</a>
-
-							<p className="mt-4 max-w-xs text-xs leading-6 text-white/25">
-								Connect with the community, follow development, and help shape
-								the future of Monolith.
+					{/* Community (hidden until there's a real Discord invite to link to) */}
+					{site.discordUrl && (
+						<div>
+							<p className="text-[10px] uppercase tracking-[0.3em] text-amber-400">
+								Community
 							</p>
+
+							<div className="mt-6">
+								<a
+									href={site.discordUrl}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="group inline-flex items-center gap-3 border border-white/10 px-5 py-3 text-sm uppercase tracking-[0.15em] text-white/70 transition-all hover:border-amber-400/40 hover:text-white"
+								>
+									<span>Join the Discord</span>
+
+									<span className="text-amber-400 transition-transform duration-300 group-hover:translate-x-1">
+										→
+									</span>
+								</a>
+
+								<p className="mt-4 max-w-xs text-xs leading-6 text-white/25">
+									Connect with the community, follow development, and help shape
+									the future of Monolith.
+								</p>
+							</div>
 						</div>
-					</div>
+					)}
 				</div>
 
 				{/* Bottom bar */}
