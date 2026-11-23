@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Hero } from "@/data/heroes";
+import { getRole } from "@/data/roles";
 
 type HeroCardProps = {
 	hero: Hero;
@@ -37,7 +38,7 @@ export default function HeroCard({ hero, number }: HeroCardProps) {
 				<div className="mb-3 h-px w-8 bg-amber-400 transition-all duration-300 group-hover:w-16" />
 
 				<p className="text-xs uppercase tracking-[0.3em] text-amber-400">
-					{hero.role}
+					{getRole(hero.role).name}
 				</p>
 
 				<h2 className="mt-2 text-2xl font-semibold uppercase tracking-wide text-white">

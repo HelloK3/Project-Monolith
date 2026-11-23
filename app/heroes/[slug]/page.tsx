@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import AbilityShowcase from "@/components/AbilityShowcase";
 import HeroStats from "@/components/HeroStats";
 import { heroes } from "@/data/heroes";
+import { getRole } from "@/data/roles";
 
 type HeroPageProps = {
 	params: Promise<{
@@ -91,7 +92,7 @@ export default async function HeroPage({ params }: HeroPageProps) {
 							<span className="h-px w-12 bg-amber-400/80" />
 
 							<p className="text-xs uppercase tracking-[0.45em] text-amber-400">
-								{hero.role}
+								{getRole(hero.role).name}
 							</p>
 						</div>
 
@@ -164,7 +165,7 @@ export default async function HeroPage({ params }: HeroPageProps) {
 									</p>
 
 									<p className="mt-3 text-lg font-semibold uppercase tracking-wide text-white">
-										{hero.role}
+										{getRole(hero.role).name}
 									</p>
 								</div>
 

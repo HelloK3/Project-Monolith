@@ -1,3 +1,5 @@
+import type { RoleSlug } from "@/data/roles";
+
 export type DescriptionPart =
 	| {
 			type: "text";
@@ -46,7 +48,7 @@ export type HeroStats = {
 export type Hero = {
 	name: string;
 	slug: string;
-	role: string;
+	role: RoleSlug;
 	description: string;
 	heroClass: string;
 	position: string;
@@ -65,7 +67,7 @@ export const heroes: Hero[] = [
 	{
 		name: "Rampage",
 		slug: "rampage",
-		role: "Jungle",
+		role: "jungle",
 		description:
 			"A powerful melee fighter capable of disrupting enemies, controlling the jungle, and diving into the heart of a fight.",
 		heroClass: "Fighter",
