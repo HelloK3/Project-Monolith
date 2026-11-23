@@ -1,11 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+
+const navLinks = [
+	{ href: "/", label: "Home" },
+	{ href: "/heroes", label: "Heroes" },
+];
 
 export default function Navbar() {
 	const [scrollDirection, setScrollDirection] = useState("top");
 	const [menuOpen, setMenuOpen] = useState(false);
+	const pathname = usePathname();
+
+	// "/" only matches the home page itself; other links also match their
+	// sub-pages, so "Heroes" stays highlighted on /heroes/rampage.
+	const isActive = (href: string) =>
+		href === "/" ? pathname === "/" : pathname.startsWith(href);
 
 	useEffect(() => {
 		let lastScrollY = window.scrollY;
@@ -53,20 +65,16 @@ export default function Navbar() {
 
 				{/* Desktop Navigation */}
 				<div className="hidden items-center gap-8 md:flex">
-					<NavLink href="/">Home</NavLink>
-					<NavLink href="/heroes">Heroes</NavLink>
-					<NavLink href="/items">Items</NavLink>
-					<NavLink href="/cards">Cards</NavLink>
-					<NavLink href="/builds">Builds</NavLink>
+					{navLinks.map((link) => (
+						<NavLink
+							key={link.href}
+							href={link.href}
+							isActive={isActive(link.href)}
+						>
+							{link.label}
+						</NavLink>
+					))}
 				</div>
-
-				{/* Desktop Search */}
-				<button
-					type="button"
-					className="hidden text-sm uppercase tracking-wider text-white/70 transition-colors hover:text-amber-400 md:block"
-				>
-					Search
-				</button>
 
 				{/* Mobile Menu Button */}
 				<button
@@ -86,32 +94,16 @@ export default function Navbar() {
 			{menuOpen && (
 				<div className="border-t border-white/10 bg-black/95 px-6 py-6 backdrop-blur-md md:hidden">
 					<div className="flex flex-col gap-5">
-						<MobileNavLink href="/" onClick={() => setMenuOpen(false)}>
-							Home
-						</MobileNavLink>
-
-						<MobileNavLink href="/heroes" onClick={() => setMenuOpen(false)}>
-							Heroes
-						</MobileNavLink>
-
-						<MobileNavLink href="/items" onClick={() => setMenuOpen(false)}>
-							Items
-						</MobileNavLink>
-
-						<MobileNavLink href="/cards" onClick={() => setMenuOpen(false)}>
-							Cards
-						</MobileNavLink>
-
-						<MobileNavLink href="/builds" onClick={() => setMenuOpen(false)}>
-							Builds
-						</MobileNavLink>
-
-						<button
-							type="button"
-							className="text-left text-sm uppercase tracking-wider text-white/70 transition-colors hover:text-amber-400"
-						>
-							Search
-						</button>
+						{navLinks.map((link) => (
+							<MobileNavLink
+								key={link.href}
+								href={link.href}
+								isActive={isActive(link.href)}
+								onClick={() => setMenuOpen(false)}
+							>
+								{link.label}
+							</MobileNavLink>
+						))}
 					</div>
 				</div>
 			)}
@@ -121,15 +113,20 @@ export default function Navbar() {
 
 function NavLink({
 	href,
+	isActive,
 	children,
 }: {
 	href: string;
+	isActive: boolean;
 	children: React.ReactNode;
 }) {
 	return (
 		<Link
 			href={href}
-			className="text-sm uppercase tracking-wider text-white/70 transition-colors hover:text-amber-400"
+			aria-current={isActive ? "page" : undefined}
+			className={`text-sm uppercase tracking-wider transition-colors hover:text-amber-400 ${
+				isActive ? "text-amber-400" : "text-white/70"
+			}`}
 		>
 			{children}
 		</Link>
@@ -138,10 +135,12 @@ function NavLink({
 
 function MobileNavLink({
 	href,
+	isActive,
 	onClick,
 	children,
 }: {
 	href: string;
+	isActive: boolean;
 	onClick: () => void;
 	children: React.ReactNode;
 }) {
@@ -149,7 +148,10 @@ function MobileNavLink({
 		<Link
 			href={href}
 			onClick={onClick}
-			className="text-sm uppercase tracking-wider text-white/80 transition-colors hover:text-amber-400"
+			aria-current={isActive ? "page" : undefined}
+			className={`text-sm uppercase tracking-wider transition-colors hover:text-amber-400 ${
+				isActive ? "text-amber-400" : "text-white/80"
+			}`}
 		>
 			{children}
 		</Link>

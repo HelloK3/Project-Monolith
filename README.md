@@ -26,9 +26,9 @@ app/
   page.tsx               Landing page (game overview, gameplay, battlefield, objectives, roles)
   heroes/page.tsx        Hero roster
   heroes/[slug]/page.tsx Hero detail page (profile, stats, abilities)
-  items/ cards/ builds/  "Coming soon" placeholders
 components/              Page sections and shared UI
 data/heroes.ts           Hero data and types
+data/roles.ts            The five team roles (shared by home page, filter, and heroes)
 public/
   images/hero/<slug>/    Hero artwork, portraits, backgrounds, ability icons
   videos/heroes/<slug>/  Ability preview clips (.webm)
