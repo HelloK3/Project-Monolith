@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AmbientVideo from "@/components/AmbientVideo";
 import HeroMonogram from "@/components/HeroMonogram";
 import type { PlaceholderHero } from "@/data/heroes";
 import { getRole } from "@/data/roles";
@@ -31,15 +32,9 @@ export default function PlaceholderHeroProfile({ hero }: { hero: PlaceholderHero
 			<section className="relative min-h-[70vh] overflow-hidden border-b border-white/10">
 				<div className="absolute inset-0">
 					{hero.previewVideo ? (
-						<video
-							className="absolute inset-0 h-full w-full object-cover"
+						<AmbientVideo
 							src={hero.previewVideo}
-							autoPlay
-							muted
-							loop
-							playsInline
-							preload="metadata"
-							aria-hidden="true"
+							className="absolute inset-0 h-full w-full object-cover"
 						/>
 					) : (
 						<HeroMonogram name={hero.name} />
@@ -50,7 +45,7 @@ export default function PlaceholderHeroProfile({ hero }: { hero: PlaceholderHero
 				</div>
 
 				<div className="relative mx-auto flex min-h-[70vh] max-w-7xl items-end px-6 pb-20 pt-32 md:px-12 md:pb-24">
-					<div className="max-w-3xl">
+					<div className="w-full min-w-0 max-w-3xl">
 						<Link
 							href="/heroes"
 							className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/35 transition-colors hover:text-amber-400"
@@ -66,7 +61,7 @@ export default function PlaceholderHeroProfile({ hero }: { hero: PlaceholderHero
 							</p>
 						</div>
 
-						<h1 className="text-6xl font-bold uppercase leading-[0.85] tracking-[-0.04em] text-white md:text-8xl lg:text-9xl">
+						<h1 className="break-words text-[clamp(2.75rem,13vw,8rem)] font-bold uppercase leading-[0.85] tracking-[-0.04em] text-white">
 							{hero.name}
 						</h1>
 

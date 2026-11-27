@@ -1,33 +1,76 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useRef, useState, type KeyboardEvent } from "react";
 import Image from "next/image";
 import AbilityDescription from "@/components/AbilityDescription";
+import AmbientVideo from "@/components/AmbientVideo";
 import type { Ability } from "@/data/heroes";
 
 type AbilityShowcaseProps = {
 	abilities: Ability[];
 };
 
+/**
+ * The ability picker follows the WAI-ARIA tabs pattern: the row of abilities
+ * is a tablist, the detail below is its tabpanel, and the arrow, Home and End
+ * keys move between abilities (only the selected tab is in the Tab order).
+ */
 export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
-	const [activeKey, setActiveKey] = useState(abilities[0]?.key);
+	const [activeIndex, setActiveIndex] = useState(0);
+	const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
+	const idPrefix = useId();
 
-	const activeAbility =
-		abilities.find((ability) => ability.key === activeKey) ?? abilities[0];
+	const activeAbility = abilities[activeIndex] ?? abilities[0];
+	const tabId = (index: number) => `${idPrefix}-tab-${index}`;
+	const panelId = `${idPrefix}-panel`;
+
+	const selectTab = (index: number) => {
+		const next = (index + abilities.length) % abilities.length;
+		setActiveIndex(next);
+		tabRefs.current[next]?.focus();
+	};
+
+	const handleKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
+		const moves: Record<string, number> = {
+			ArrowRight: activeIndex + 1,
+			ArrowLeft: activeIndex - 1,
+			Home: 0,
+			End: abilities.length - 1,
+		};
+
+		if (event.key in moves) {
+			event.preventDefault();
+			selectTab(moves[event.key]);
+		}
+	};
 
 	return (
 		<div className="border border-white/10 bg-[#0b0f14]">
 			{/* Ability navigation */}
-			<div className="grid grid-cols-5 border-b border-white/10">
-				{abilities.map((ability) => {
-					const isActive = ability.key === activeKey;
+			<div
+				role="tablist"
+				aria-label="Abilities"
+				className="grid grid-cols-5 border-b border-white/10"
+			>
+				{abilities.map((ability, index) => {
+					const isActive = index === activeIndex;
 
 					return (
 						<button
 							key={ability.key}
+							ref={(element) => {
+								tabRefs.current[index] = element;
+							}}
+							id={tabId(index)}
 							type="button"
-							onClick={() => setActiveKey(ability.key)}
-							className={`group relative border-r border-white/10 px-5 py-6 text-left transition-all duration-200 last:border-r-0 ${
+							role="tab"
+							aria-selected={isActive}
+							aria-controls={panelId}
+							aria-label={`${ability.label}: ${ability.name}`}
+							tabIndex={isActive ? 0 : -1}
+							onClick={() => setActiveIndex(index)}
+							onKeyDown={handleKeyDown}
+							className={`group relative flex min-w-0 flex-col items-center border-r border-white/10 px-1 py-4 text-center transition-all duration-200 last:border-r-0 focus-visible:outline focus-visible:outline-1 focus-visible:-outline-offset-1 focus-visible:outline-amber-400 sm:items-start sm:px-5 sm:py-6 sm:text-left ${
 								isActive
 									? "bg-white/[0.045]"
 									: "bg-transparent hover:bg-white/[0.025]"
@@ -42,7 +85,7 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 
 							{/* Ability icon */}
 							<div
-								className={`mb-4 flex h-12 w-12 items-center justify-center overflow-hidden border transition-all duration-200 ${
+								className={`mb-3 flex h-10 w-10 items-center justify-center overflow-hidden border transition-all duration-200 sm:mb-4 sm:h-12 sm:w-12 ${
 									isActive
 										? "border-amber-400/50 bg-black shadow-[0_0_20px_rgba(245,158,11,0.08)]"
 										: "border-white/10 bg-black/40 group-hover:border-white/20"
@@ -72,9 +115,9 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 								{ability.label}
 							</p>
 
-							{/* Ability type */}
+							{/* Ability type (the key alone is enough on small screens) */}
 							<p
-								className={`mt-3 text-sm font-semibold uppercase tracking-wide transition-colors ${
+								className={`mt-3 hidden text-sm font-semibold uppercase tracking-wide transition-colors md:block ${
 									isActive
 										? "text-white"
 										: "text-white/50 group-hover:text-white/70"
@@ -88,7 +131,12 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 			</div>
 
 			{/* Ability detail */}
-			<div className="grid gap-10 p-6 md:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+			<div
+				role="tabpanel"
+				id={panelId}
+				aria-labelledby={tabId(activeIndex)}
+				className="grid gap-8 p-5 md:gap-10 md:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16"
+			>
 				{/* Ability video */}
 				<div className="relative aspect-video overflow-hidden border border-white/10 bg-black">
 					{/* Artwork underneath the video */}
@@ -101,15 +149,11 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 						/>
 					)}
 
-					{/* Ability video */}
 					{activeAbility.video && (
-						<video
+						<AmbientVideo
 							key={activeAbility.video}
 							src={activeAbility.video}
-							autoPlay
-							muted
-							loop
-							playsInline
+							decorative={false}
 							className="absolute inset-0 h-full w-full object-cover"
 						/>
 					)}
@@ -134,7 +178,7 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 					</div>
 
 					{/* Ability name */}
-					<h3 className="mt-5 text-4xl font-bold uppercase tracking-tight md:text-5xl">
+					<h3 className="mt-5 text-3xl font-bold uppercase tracking-tight md:text-5xl">
 						{activeAbility.name}
 					</h3>
 

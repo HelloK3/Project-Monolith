@@ -1,30 +1,26 @@
+import AmbientVideo from "@/components/AmbientVideo";
+
 export default function HeroSection() {
 	return (
-		<section className="relative min-h-[calc(100vh-82px)] overflow-hidden">
+		<section className="relative min-h-[calc(100svh-4rem)] overflow-hidden">
 			{/* Background video */}
-			<video
-				className="absolute inset-0 h-full w-full object-cover"
-				autoPlay
-				muted
-				loop
-				playsInline
+			<AmbientVideo
+				src="/videos/sparrow.webm"
 				preload="auto"
-				aria-hidden="true"
-			>
-				<source src="/videos/sparrow.webm" type="video/webm" />
-			</video>
+				className="absolute inset-0 h-full w-full object-cover"
+			/>
 
 			{/* Dark overlay */}
 			<div className="absolute inset-0 bg-black/50" />
 
 			{/* Hero Content */}
-			<div className="relative z-10 flex min-h-[calc(100vh-82px)] items-center justify-center px-6 text-center">
+			<div className="relative z-10 flex min-h-[calc(100svh-4rem)] items-center justify-center px-6 text-center">
 				<div>
 					<p className="mb-4 text-sm uppercase tracking-[0.4em] text-amber-400">
 						Paragon v45 Reference
 					</p>
 
-					<h1 className="text-6xl font-bold uppercase tracking-[0.2em] text-white md:text-8xl">
+					<h1 className="text-5xl font-bold uppercase tracking-[0.15em] text-white sm:text-6xl sm:tracking-[0.2em] md:text-8xl">
 						Monolith
 					</h1>
 
