@@ -2,7 +2,7 @@
 
 **Live site: [project-monolith-beta.vercel.app](https://project-monolith-beta.vercel.app/)**
 
-An unofficial reference site for **Paragon v45**, Epic Games' discontinued third-person MOBA. It has all 37 heroes with their stats, abilities, ability videos and art, built from data extracted from the game files.
+An unofficial reference site for **Paragon v45**, Epic Games' discontinued third-person MOBA. It has all 37 heroes with their stats, abilities, ability videos and skins, plus a browser for the game's 116 cards, all built from data extracted from the game files.
 
 Built with **Next.js 16** (App Router), **React 19**, **TypeScript** and **Tailwind CSS 4**, and deployed on Vercel.
 
@@ -13,6 +13,8 @@ Built with **Next.js 16** (App Router), **React 19**, **TypeScript** and **Tailw
 ## Features
 
 - **37 hero pages**, each with a profile, combat ratings, base stats with per-level growth, and all five abilities. Every ability has its description, cooldowns, costs and an in-game preview video.
+- **A skins gallery** on 30 hero pages, with a large preview and keyboard-operable thumbnails.
+- **A card browser** for 116 cards. You can filter by affinity and rarity together (`/cards?affinity=chaos&rarity=epic`), and each card has its own page with its art, effects, stats and attribute costs.
 - **A roster filtered by role.** The filter lives in the URL (`/heroes?role=jungle`), so a filtered view can be shared and works with the back button.
 - **Responsive from 375px phones up to wide desktops.** The roster goes from 2 to 6 columns, and the ability tabs collapse to icons on small screens.
 - **Accessible:**
@@ -20,7 +22,7 @@ Built with **Next.js 16** (App Router), **React 19**, **TypeScript** and **Tailw
   - every control has a visible focus outline;
   - Escape closes the mobile menu;
   - autoplaying videos pause for visitors who prefer reduced motion.
-- **Static and fast:** every hero page is pre-rendered at build time, and unknown hero URLs return a real 404.
+- **Static and fast:** every hero and card page is pre-rendered at build time, and unknown URLs return a real 404.
 
 | Roster | Abilities |
 |---|---|
@@ -47,6 +49,8 @@ public/images/hero/<slug>/  portraits, banners and ability icons
         ▼
 37 statically generated hero pages
 ```
+
+Cards go through the same pipeline with [`scripts/import-cards.mjs`](scripts/import-cards.mjs). It formats each effect's 20-step value curve using the game's own display hints (raw fractions, subtract-one percentages, times), and fills the card text with the value ranges, for example "7.4–18.6%". The four cards that have no stats in the game files are left out.
 
 [`scripts/import-heroes.mjs`](scripts/import-heroes.mjs) does the translation from game data to site data:
 
@@ -87,14 +91,19 @@ app/
   page.tsx                   Landing page (overview, gameplay, battlefield, objectives, roles)
   heroes/page.tsx            Hero roster with the role filter
   heroes/[slug]/page.tsx     Hero detail page (statically generated for every hero)
+  cards/page.tsx             Card browser with affinity and rarity filters
+  cards/[slug]/page.tsx      Card detail page
 components/                  Page sections and shared UI
 data/heroes/                 One generated file per hero, plus types.ts and roster.ts
 data/roles.ts                The five team roles
+data/cards.ts                Generated card list (types and affinities in card-types.ts)
 public/
   images/hero/<slug>/        Portraits, banners, ability icons, skin art
+  images/cards/              Card art (WebP)
   videos/heroes/<slug>/      Ability preview clips (.webm)
   icons/paragon/             In-game stat and status icons (SVG)
 scripts/import-heroes.mjs    Generates data/heroes/ from a Paragon v45 data export
+scripts/import-cards.mjs     Generates data/cards.ts and the card art
 docs/screenshots/            Images used in this README
 ```
 
@@ -104,8 +113,9 @@ The import script needs the game-file export (not included in this repo) and `ff
 
 ```bash
 node scripts/import-heroes.mjs <path to monolith-export>
+node scripts/import-cards.mjs <path to monolith-export>
 ```
 
-It writes `data/heroes/<slug>.ts` and the hero images. Full-body hero renders can be layered over the header banners by switching on `useFullBodyRenders` in the script.
+The hero script `data/heroes/<slug>.ts` and the hero images. Full-body hero renders can be layered over the header banners by switching on `useFullBodyRenders` in the script.
 
 Ability descriptions are arrays of `text`, `bold` and `icon` parts. Icon names match the SVG files in `public/icons/paragon/` (without `.svg`), and `color` picks the damage or status color.
