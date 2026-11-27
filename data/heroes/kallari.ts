@@ -324,4 +324,18 @@ export const kallari: CompleteHero = {
 			video: "/videos/heroes/kallari/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/kallari/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/kallari/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/kallari/skins/master.jpg",
+		},
+	],
 };

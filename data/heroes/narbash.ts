@@ -283,4 +283,18 @@ export const narbash: CompleteHero = {
 			video: "/videos/heroes/narbash/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/narbash/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/narbash/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/narbash/skins/master.jpg",
+		},
+	],
 };

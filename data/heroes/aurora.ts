@@ -296,4 +296,18 @@ export const aurora: CompleteHero = {
 			video: "/videos/heroes/aurora/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/aurora/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/aurora/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/aurora/skins/master.jpg",
+		},
+	],
 };

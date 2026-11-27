@@ -302,4 +302,18 @@ export const morigesh: CompleteHero = {
 			video: "/videos/heroes/morigesh/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/morigesh/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/morigesh/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/morigesh/skins/master.jpg",
+		},
+	],
 };

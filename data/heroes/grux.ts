@@ -252,4 +252,18 @@ export const grux: CompleteHero = {
 			video: "/videos/heroes/grux/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/grux/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/grux/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/grux/skins/master.jpg",
+		},
+	],
 };

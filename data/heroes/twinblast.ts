@@ -275,4 +275,18 @@ export const twinblast: CompleteHero = {
 			video: "/videos/heroes/twinblast/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/twinblast/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/twinblast/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/twinblast/skins/master.jpg",
+		},
+	],
 };

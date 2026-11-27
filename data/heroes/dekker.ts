@@ -224,4 +224,18 @@ export const dekker: CompleteHero = {
 			video: "/videos/heroes/dekker/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/dekker/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/dekker/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/dekker/skins/master.jpg",
+		},
+	],
 };

@@ -256,4 +256,18 @@ export const murdock: CompleteHero = {
 			video: "/videos/heroes/murdock/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/murdock/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/murdock/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/murdock/skins/master.jpg",
+		},
+	],
 };

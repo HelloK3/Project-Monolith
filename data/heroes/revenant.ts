@@ -336,4 +336,18 @@ export const revenant: CompleteHero = {
 			video: "/videos/heroes/revenant/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/revenant/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/revenant/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/revenant/skins/master.jpg",
+		},
+	],
 };

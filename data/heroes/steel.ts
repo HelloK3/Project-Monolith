@@ -294,4 +294,18 @@ export const steel: CompleteHero = {
 			video: "/videos/heroes/steel/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/steel/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/steel/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/steel/skins/master.jpg",
+		},
+	],
 };

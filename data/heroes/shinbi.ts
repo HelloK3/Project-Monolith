@@ -288,4 +288,18 @@ export const shinbi: CompleteHero = {
 			video: "/videos/heroes/shinbi/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/shinbi/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/shinbi/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/shinbi/skins/master.jpg",
+		},
+	],
 };

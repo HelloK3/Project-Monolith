@@ -255,4 +255,18 @@ export const fengMao: CompleteHero = {
 			video: "/videos/heroes/feng-mao/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/feng-mao/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/feng-mao/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/feng-mao/skins/master.jpg",
+		},
+	],
 };

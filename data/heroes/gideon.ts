@@ -263,4 +263,18 @@ export const gideon: CompleteHero = {
 			video: "/videos/heroes/gideon/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/gideon/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/gideon/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/gideon/skins/master.jpg",
+		},
+	],
 };

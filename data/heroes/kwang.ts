@@ -312,4 +312,18 @@ export const kwang: CompleteHero = {
 			video: "/videos/heroes/kwang/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/kwang/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/kwang/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/kwang/skins/master.jpg",
+		},
+	],
 };

@@ -307,4 +307,18 @@ export const gadget: CompleteHero = {
 			video: "/videos/heroes/gadget/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/gadget/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/gadget/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/gadget/skins/master.jpg",
+		},
+	],
 };

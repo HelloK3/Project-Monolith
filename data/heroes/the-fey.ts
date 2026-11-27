@@ -311,4 +311,18 @@ export const theFey: CompleteHero = {
 			video: "/videos/heroes/the-fey/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/the-fey/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/the-fey/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/the-fey/skins/master.jpg",
+		},
+	],
 };

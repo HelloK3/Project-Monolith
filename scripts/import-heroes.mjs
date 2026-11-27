@@ -348,6 +348,31 @@ function toSource(value, indent = "") {
 	return JSON.stringify(value);
 }
 
+/**
+ * Skin art in public/images/hero/<slug>/skins/ (from the old Paragon
+ * website), default skin first. Undefined when a hero has none.
+ */
+function skinsFor(slug) {
+	const dir = path.join(root, "public/images/hero", slug, "skins");
+	if (!fs.existsSync(dir)) return undefined;
+
+	const files = fs
+		.readdirSync(dir)
+		.filter((file) => /\.(jpe?g|png|webp)$/i.test(file))
+		.sort((a, b) => (a.startsWith("default") ? -1 : b.startsWith("default") ? 1 : a.localeCompare(b)));
+
+	if (files.length === 0) return undefined;
+
+	return files.map((file) => ({
+		name: file
+			.replace(/\.\w+$/, "")
+			.split(/[-_]/)
+			.map((word) => word[0].toUpperCase() + word.slice(1))
+			.join(" "),
+		image: `/images/hero/${slug}/skins/${file}`,
+	}));
+}
+
 /* ------------------------------------------------------------------ */
 /* Build                                                               */
 /* ------------------------------------------------------------------ */
@@ -463,6 +488,7 @@ for (const entry of manifest.heroes) {
 				: statText(stats.attackSpeed),
 		},
 		abilities: siteAbilities,
+		skins: skinsFor(slug),
 	};
 
 	const name = camelCase(slug);

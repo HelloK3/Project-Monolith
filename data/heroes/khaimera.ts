@@ -306,4 +306,18 @@ export const khaimera: CompleteHero = {
 			video: "/videos/heroes/khaimera/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/khaimera/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/khaimera/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/khaimera/skins/master.jpg",
+		},
+	],
 };

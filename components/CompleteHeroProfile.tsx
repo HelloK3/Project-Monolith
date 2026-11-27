@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AbilityShowcase from "@/components/AbilityShowcase";
 import HeroStats from "@/components/HeroStats";
+import SkinsGallery from "@/components/SkinsGallery";
 import type { CompleteHero } from "@/data/heroes";
 import { getRole } from "@/data/roles";
 
@@ -207,6 +208,25 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 					<AbilityShowcase abilities={hero.abilities} />
 				</div>
 			</section>
+
+			{/* Skins */}
+			{hero.skins && hero.skins.length > 0 && (
+				<section className="border-b border-white/10 px-6 py-20 md:px-12 md:py-28">
+					<div className="mx-auto max-w-7xl">
+						<div className="mb-12">
+							<p className="text-xs uppercase tracking-[0.3em] text-amber-400">
+								Skins
+							</p>
+
+							<h2 className="mt-4 text-4xl font-bold uppercase tracking-tight md:text-5xl">
+								Change the look.
+							</h2>
+						</div>
+
+						<SkinsGallery heroName={hero.name} skins={hero.skins} />
+					</div>
+				</section>
+			)}
 		</main>
 	);
 }

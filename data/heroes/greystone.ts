@@ -285,4 +285,18 @@ export const greystone: CompleteHero = {
 			video: "/videos/heroes/greystone/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/greystone/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/greystone/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/greystone/skins/master.jpg",
+		},
+	],
 };

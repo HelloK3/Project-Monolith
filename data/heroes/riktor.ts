@@ -309,4 +309,18 @@ export const riktor: CompleteHero = {
 			video: "/videos/heroes/riktor/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/riktor/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/riktor/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/riktor/skins/master.jpg",
+		},
+	],
 };

@@ -277,4 +277,18 @@ export const howitzer: CompleteHero = {
 			video: "/videos/heroes/howitzer/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/howitzer/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/howitzer/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/howitzer/skins/master.jpg",
+		},
+	],
 };

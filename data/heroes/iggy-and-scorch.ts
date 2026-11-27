@@ -338,4 +338,18 @@ export const iggyAndScorch: CompleteHero = {
 			video: "/videos/heroes/iggy-and-scorch/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/iggy-and-scorch/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/iggy-and-scorch/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/iggy-and-scorch/skins/master.jpg",
+		},
+	],
 };

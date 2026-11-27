@@ -349,4 +349,18 @@ export const serath: CompleteHero = {
 			video: "/videos/heroes/serath/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/serath/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/serath/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/serath/skins/master.jpg",
+		},
+	],
 };

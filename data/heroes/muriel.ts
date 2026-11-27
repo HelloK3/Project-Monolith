@@ -325,4 +325,18 @@ export const muriel: CompleteHero = {
 			video: "/videos/heroes/muriel/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/muriel/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/muriel/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/muriel/skins/master.jpg",
+		},
+	],
 };

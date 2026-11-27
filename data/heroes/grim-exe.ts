@@ -245,4 +245,18 @@ export const grimExe: CompleteHero = {
 			video: "/videos/heroes/grim-exe/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/grim-exe/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/grim-exe/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/grim-exe/skins/master.jpg",
+		},
+	],
 };

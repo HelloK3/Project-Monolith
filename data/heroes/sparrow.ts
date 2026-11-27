@@ -233,4 +233,18 @@ export const sparrow: CompleteHero = {
 			video: "/videos/heroes/sparrow/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/sparrow/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/sparrow/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/sparrow/skins/master.jpg",
+		},
+	],
 };

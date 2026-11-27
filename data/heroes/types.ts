@@ -86,6 +86,8 @@ export type CompleteHero = HeroBase & {
 	background: string;
 	stats: HeroStats;
 	abilities: Ability[];
+	/** Skin art, default first. Unset when no skin art is available. */
+	skins?: { name: string; image: string }[];
 };
 
 /**

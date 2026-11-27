@@ -221,4 +221,18 @@ export const wraith: CompleteHero = {
 			video: "/videos/heroes/wraith/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/wraith/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/wraith/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/wraith/skins/master.jpg",
+		},
+	],
 };

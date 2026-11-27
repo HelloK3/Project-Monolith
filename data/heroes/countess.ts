@@ -299,4 +299,18 @@ export const countess: CompleteHero = {
 			video: "/videos/heroes/countess/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/countess/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/countess/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/countess/skins/master.jpg",
+		},
+	],
 };

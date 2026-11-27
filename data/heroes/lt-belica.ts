@@ -279,4 +279,18 @@ export const ltBelica: CompleteHero = {
 			video: "/videos/heroes/lt-belica/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/lt-belica/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/lt-belica/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/lt-belica/skins/master.jpg",
+		},
+	],
 };

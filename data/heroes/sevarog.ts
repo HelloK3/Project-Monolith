@@ -425,4 +425,18 @@ export const sevarog: CompleteHero = {
 			video: "/videos/heroes/sevarog/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/sevarog/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/sevarog/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/sevarog/skins/master.jpg",
+		},
+	],
 };

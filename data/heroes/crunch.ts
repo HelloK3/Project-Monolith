@@ -392,4 +392,18 @@ export const crunch: CompleteHero = {
 			video: "/videos/heroes/crunch/r.webm",
 		},
 	],
+	skins: [
+		{
+			name: "Default",
+			image: "/images/hero/crunch/skins/default.jpg",
+		},
+		{
+			name: "Challenger",
+			image: "/images/hero/crunch/skins/challenger.jpg",
+		},
+		{
+			name: "Master",
+			image: "/images/hero/crunch/skins/master.jpg",
+		},
+	],
 };
