@@ -39,6 +39,13 @@ export default function Footer() {
 							</Link>
 
 							<Link
+								href="/cards"
+								className="text-sm text-white/50 transition-colors hover:text-white"
+							>
+								Cards
+							</Link>
+
+							<Link
 								href="/#battlefield"
 								className="text-sm text-white/50 transition-colors hover:text-white"
 							>
