@@ -11,9 +11,11 @@ const iconColors: Record<
 	physical: "#ec685a",
 	magic: "#b17bfc",
 	health: "#67c587",
+	mana: "#5b9cf0",
 	slow: "#5eb6e6",
 	stun: "#e5c35a",
 	armor: "#9b9b9b",
+	neutral: "#c9ccd1",
 };
 
 export default function AbilityDescription({ parts }: AbilityDescriptionProps) {

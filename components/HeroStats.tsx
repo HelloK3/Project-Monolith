@@ -1,7 +1,7 @@
-import type { Hero } from "@/data/heroes";
+import type { CompleteHero } from "@/data/heroes";
 
 type HeroStatsProps = {
-	hero: Hero;
+	hero: CompleteHero;
 };
 
 const combatRatings = [

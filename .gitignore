@@ -28,3 +28,6 @@ yarn-error.log*
 # OS / editor
 .DS_Store
 *.pem
+
+# Paragon reference material (not served, not committed)
+/reference/

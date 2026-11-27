@@ -27,18 +27,29 @@ app/
   heroes/page.tsx        Hero roster
   heroes/[slug]/page.tsx Hero detail page (profile, stats, abilities)
 components/              Page sections and shared UI
-data/heroes.ts           Hero data and types
+data/heroes/             Hero data: one generated file per hero, plus types.ts and roster.ts
 data/roles.ts            The five team roles (shared by home page, filter, and heroes)
 public/
   images/hero/<slug>/    Hero artwork, portraits, backgrounds, ability icons
   videos/heroes/<slug>/  Ability preview clips (.webm)
   icons/paragon/         In-game stat and status icons (SVG)
+scripts/import-heroes.mjs  Generates data/heroes/ from a Paragon v45 data export
 ```
 
-## Adding a hero
+## Hero data
 
-1. Put the hero's images in `public/images/hero/<slug>/` and ability clips in `public/videos/heroes/<slug>/`.
-2. Add an entry to the `heroes` array in `data/heroes.ts`. TypeScript will flag any missing fields.
-3. The hero then appears on `/heroes` and gets a page at `/heroes/<slug>`.
+Every hero's stats, abilities, icons and art come from the Paragon v45 game files. They were exported to JSON and PNG with [CUE4Parse](https://github.com/FabianFG/CUE4Parse), then turned into typed TypeScript by the import script:
+
+```bash
+node scripts/import-heroes.mjs <path to monolith-export>
+```
+
+The script copies each hero's portrait and ability icons into `public/images/hero/<slug>/`, builds the header image `banner.jpg` (full-body renders in `reference/fullbody/` can be layered on top by switching on `useFullBodyRenders`), and writes `data/heroes/<slug>.ts`. It needs `ffmpeg` installed. Hand-picked art and Rampage's custom media are set in the script's overrides, so re-running it never loses them. The generated files shouldn't be edited by hand.
+
+Ability clips are the game's own preview videos as WebM. The current 720p clips come from the old Paragon website; lighter versions can be made with ffmpeg:
+
+```bash
+ffmpeg -i <clip>.mp4 -an -vf scale=854:-2 -c:v libvpx-vp9 -crf 46 -b:v 0 public/videos/heroes/<slug>/<slot>.webm
+```
 
 Ability descriptions are arrays of `text`, `bold`, and `icon` parts. Icon names match the SVG file names in `public/icons/paragon/` (without `.svg`), and `color` picks the damage or status color.
