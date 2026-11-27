@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
 	{ href: "/", label: "Home" },
@@ -12,6 +12,7 @@ const navLinks = [
 export default function Navbar() {
 	const [scrollDirection, setScrollDirection] = useState("top");
 	const [menuOpen, setMenuOpen] = useState(false);
+	const menuButtonRef = useRef<HTMLButtonElement>(null);
 	const pathname = usePathname();
 
 	// "/" only matches the home page itself; other links also match their
@@ -42,6 +43,21 @@ export default function Navbar() {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+
+	// Escape closes the mobile menu and puts focus back on its button.
+	useEffect(() => {
+		if (!menuOpen) return;
+
+		const handleKeyDown = (event: KeyboardEvent) => {
+			if (event.key === "Escape") {
+				setMenuOpen(false);
+				menuButtonRef.current?.focus();
+			}
+		};
+
+		document.addEventListener("keydown", handleKeyDown);
+		return () => document.removeEventListener("keydown", handleKeyDown);
+	}, [menuOpen]);
 
 	const navbarStyle =
 		scrollDirection === "top"
@@ -78,11 +94,13 @@ export default function Navbar() {
 
 				{/* Mobile Menu Button */}
 				<button
+					ref={menuButtonRef}
 					type="button"
-					aria-label="Toggle menu"
+					aria-label={menuOpen ? "Close menu" : "Open menu"}
 					aria-expanded={menuOpen}
+					aria-controls="mobile-menu"
 					onClick={() => setMenuOpen(!menuOpen)}
-					className="flex flex-col gap-1.5 md:hidden"
+					className="-mr-2 flex flex-col gap-1.5 p-2 focus-visible:outline focus-visible:outline-1 focus-visible:outline-amber-400 md:hidden"
 				>
 					<span className="block h-px w-6 bg-white" />
 					<span className="block h-px w-6 bg-white" />
@@ -92,7 +110,10 @@ export default function Navbar() {
 
 			{/* Mobile Menu */}
 			{menuOpen && (
-				<div className="border-t border-white/10 bg-black/95 px-6 py-6 backdrop-blur-md md:hidden">
+				<div
+					id="mobile-menu"
+					className="border-t border-white/10 bg-black/95 px-6 py-6 backdrop-blur-md md:hidden"
+				>
 					<div className="flex flex-col gap-5">
 						{navLinks.map((link) => (
 							<MobileNavLink

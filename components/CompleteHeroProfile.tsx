@@ -10,7 +10,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 	return (
 		<main className="min-h-screen bg-[#080b0f] text-white">
 			{/* Hero Header */}
-			<section className="relative min-h-[calc(100vh-76px)] overflow-hidden border-b border-white/10">
+			<section className="relative min-h-[calc(100svh-4rem)] overflow-hidden border-b border-white/10">
 				{/* Atmospheric background */}
 				<div className="absolute inset-0">
 					<Image
@@ -54,8 +54,8 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 				)}
 
 				{/* Main content */}
-				<div className="relative mx-auto flex min-h-[calc(100vh-76px)] max-w-7xl items-end px-6 pb-24 md:px-12 md:pb-28">
-					<div className="max-w-3xl">
+				<div className="relative mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl items-end px-6 pb-24 md:px-12 md:pb-28">
+					<div className="w-full min-w-0 max-w-3xl">
 						<Link
 							href="/heroes"
 							className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/35 transition-colors hover:text-amber-400"
@@ -71,7 +71,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 							</p>
 						</div>
 
-						<h1 className="text-7xl font-bold uppercase leading-[0.82] tracking-[-0.04em] text-white md:text-9xl lg:text-[10rem]">
+						<h1 className="break-words text-[clamp(2.75rem,14vw,10rem)] font-bold uppercase leading-[0.82] tracking-[-0.04em] text-white">
 							{hero.name}
 						</h1>
 

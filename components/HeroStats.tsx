@@ -124,17 +124,17 @@ export default function HeroStats({ hero }: HeroStatsProps) {
 						</h3>
 					</div>
 
-					<div className="grid border-l border-t border-white/10 sm:grid-cols-2">
+					<div className="grid grid-cols-2 border-l border-t border-white/10">
 						{baseStats.map((stat) => (
 							<div
 								key={stat.value}
-								className="border-b border-r border-white/10 p-5"
+								className="border-b border-r border-white/10 p-4 sm:p-5"
 							>
 								<p className="text-[9px] uppercase tracking-[0.3em] text-white/30">
 									{stat.label}
 								</p>
 
-								<p className="mt-3 text-base font-semibold text-white/85">
+								<p className="mt-3 text-sm font-semibold text-white/85 sm:text-base">
 									{stats[stat.value]}
 								</p>
 							</div>
