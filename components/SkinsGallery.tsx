@@ -80,7 +80,7 @@ export default function SkinsGallery({ heroName, skins }: SkinsGalleryProps) {
 
 							<p
 								className={`mt-2 text-[10px] uppercase tracking-[0.25em] ${
-									isActive ? "text-amber-400" : "text-white/40"
+									isActive ? "text-amber-400" : "text-white/60"
 								}`}
 							>
 								{skin.name}

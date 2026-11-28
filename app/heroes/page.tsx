@@ -57,13 +57,13 @@ export default async function HeroesPage({ searchParams }: HeroesPageProps) {
 				<div className="mx-auto max-w-7xl">
 					<div className="mb-10 flex flex-col gap-6 border-b border-white/10 pb-6 md:flex-row md:items-end md:justify-between">
 						<div>
-							<p className="text-xs uppercase tracking-[0.3em] text-white/30">
+							<p className="text-xs uppercase tracking-[0.3em] text-white/55">
 								Roster
 							</p>
 
 							<h2 className="mt-2 text-2xl font-semibold uppercase tracking-wide">
 								{activeRole ? getRole(activeRole).name : "All Heroes"}
-								<span className="ml-3 text-base font-normal text-white/30">
+								<span className="ml-3 text-base font-normal text-white/55">
 									{visibleHeroes.length}
 								</span>
 							</h2>
@@ -102,7 +102,7 @@ export default async function HeroesPage({ searchParams }: HeroesPageProps) {
 						</div>
 					) : (
 						<div className="border border-white/10 bg-[#0b0f14] px-8 py-16 text-center">
-							<p className="text-sm uppercase tracking-[0.3em] text-white/40">
+							<p className="text-sm uppercase tracking-[0.3em] text-white/60">
 								No {activeRole && getRole(activeRole).name} heroes added yet
 							</p>
 

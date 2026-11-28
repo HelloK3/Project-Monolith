@@ -62,13 +62,13 @@ export default function HeroCard({ hero, number }: HeroCardProps) {
 
 			{/* Status (placeholders only) */}
 			{!isComplete && (
-				<div className="absolute left-4 top-4 border border-white/10 bg-black/40 px-2 py-1 text-[9px] uppercase tracking-[0.25em] text-white/40">
+				<div className="absolute left-4 top-4 border border-white/10 bg-black/40 px-2 py-1 text-[9px] uppercase tracking-[0.25em] text-white/60">
 					In progress
 				</div>
 			)}
 
 			{/* Hero number */}
-			<div className="absolute right-4 top-4 text-xs tracking-[0.3em] text-white/20">
+			<div className="absolute right-4 top-4 text-xs tracking-[0.3em] text-white/55">
 				{String(number).padStart(2, "0")}
 			</div>
 		</Link>

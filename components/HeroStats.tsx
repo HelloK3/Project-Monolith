@@ -88,7 +88,7 @@ export default function HeroStats({ hero }: HeroStatsProps) {
 				{/* Combat Profile */}
 				<div className="border-b border-white/10 p-8 lg:border-b-0 lg:border-r md:p-10">
 					<div className="mb-8">
-						<p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+						<p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
 							Combat Profile
 						</p>
 
@@ -115,7 +115,7 @@ export default function HeroStats({ hero }: HeroStatsProps) {
 				{/* Base Statistics */}
 				<div className="p-8 md:p-10">
 					<div className="mb-8">
-						<p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+						<p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
 							Base Statistics
 						</p>
 
@@ -130,7 +130,7 @@ export default function HeroStats({ hero }: HeroStatsProps) {
 								key={stat.value}
 								className="border-b border-r border-white/10 p-4 sm:p-5"
 							>
-								<p className="text-[9px] uppercase tracking-[0.3em] text-white/30">
+								<p className="text-[9px] uppercase tracking-[0.3em] text-white/55">
 									{stat.label}
 								</p>
 

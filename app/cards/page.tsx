@@ -106,13 +106,13 @@ export default async function CardsPage({ searchParams }: CardsPageProps) {
 				<div className="mx-auto max-w-7xl">
 					<div className="mb-10 flex flex-col gap-6 border-b border-white/10 pb-6 lg:flex-row lg:items-end lg:justify-between">
 						<div>
-							<p className="text-xs uppercase tracking-[0.3em] text-white/30">
+							<p className="text-xs uppercase tracking-[0.3em] text-white/55">
 								Collection
 							</p>
 
 							<h2 className="mt-2 text-2xl font-semibold uppercase tracking-wide">
 								{heading} Cards
-								<span className="ml-3 text-base font-normal text-white/30">
+								<span className="ml-3 text-base font-normal text-white/55">
 									{visibleCards.length}
 								</span>
 							</h2>
@@ -156,7 +156,7 @@ export default async function CardsPage({ searchParams }: CardsPageProps) {
 						</div>
 					) : (
 						<div className="border border-white/10 bg-[#0b0f14] px-8 py-16 text-center">
-							<p className="text-sm uppercase tracking-[0.3em] text-white/40">
+							<p className="text-sm uppercase tracking-[0.3em] text-white/60">
 								No {heading.toLowerCase()} cards
 							</p>
 

@@ -49,7 +49,7 @@ export default async function CardPage({ params }: CardPageProps) {
 				<div className="mx-auto max-w-7xl">
 					<Link
 						href="/cards"
-						className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/35 transition-colors hover:text-amber-400"
+						className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/60 transition-colors hover:text-amber-400"
 					>
 						← Cards
 					</Link>
@@ -116,13 +116,13 @@ export default async function CardPage({ params }: CardPageProps) {
 									...card.costs.map((cost) => ({ label: `${cost.label} cost`, value: String(cost.amount) })),
 								].map((item) => (
 									<div key={item.label} className="border-b border-r border-white/10 p-4 sm:p-5">
-										<p className="text-[9px] uppercase tracking-[0.3em] text-white/30">{item.label}</p>
+										<p className="text-[9px] uppercase tracking-[0.3em] text-white/55">{item.label}</p>
 										<p className="mt-3 text-sm font-semibold text-white/85 sm:text-base">{item.value}</p>
 									</div>
 								))}
 							</div>
 
-							<p className="mt-6 max-w-xl text-xs leading-6 text-white/30">
+							<p className="mt-6 max-w-xl text-xs leading-6 text-white/55">
 								Ranges show how an effect scales across the game&apos;s 20 value steps.
 							</p>
 						</div>

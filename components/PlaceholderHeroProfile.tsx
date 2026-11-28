@@ -48,7 +48,7 @@ export default function PlaceholderHeroProfile({ hero }: { hero: PlaceholderHero
 					<div className="w-full min-w-0 max-w-3xl">
 						<Link
 							href="/heroes"
-							className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/35 transition-colors hover:text-amber-400"
+							className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/60 transition-colors hover:text-amber-400"
 						>
 							← Heroes
 						</Link>
@@ -86,7 +86,7 @@ export default function PlaceholderHeroProfile({ hero }: { hero: PlaceholderHero
 					<div className="mt-12 grid gap-px bg-white/10 md:grid-cols-3">
 						{upcomingSections.map((section) => (
 							<div key={section.label} className="bg-[#0b0f14] p-8 md:p-10">
-								<p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+								<p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
 									{section.label}
 								</p>
 

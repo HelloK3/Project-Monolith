@@ -12,14 +12,14 @@ export default function Footer() {
 							Monolith
 						</p>
 
-						<p className="mt-5 max-w-sm text-sm leading-7 text-white/40">
+						<p className="mt-5 max-w-sm text-sm leading-7 text-white/60">
 							A community-built resource dedicated to the Monolith project and
 							the community helping bring it back.
 						</p>
 
 						<div className="mt-8 h-px w-12 bg-amber-400" />
 
-						<p className="mt-4 text-[10px] uppercase tracking-[0.3em] text-white/20">
+						<p className="mt-4 text-[10px] uppercase tracking-[0.3em] text-white/55">
 							Built for the community. Built for the game.
 						</p>
 					</div>
@@ -89,7 +89,7 @@ export default function Footer() {
 									</span>
 								</a>
 
-								<p className="mt-4 max-w-xs text-xs leading-6 text-white/25">
+								<p className="mt-4 max-w-xs text-xs leading-6 text-white/55">
 									Connect with the community, follow development, and help shape
 									the future of Monolith.
 								</p>
@@ -99,7 +99,7 @@ export default function Footer() {
 				</div>
 
 				{/* Bottom bar */}
-				<div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-[10px] uppercase tracking-[0.25em] text-white/20 md:flex-row md:items-center md:justify-between">
+				<div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-6 text-[10px] uppercase tracking-[0.25em] text-white/55 md:flex-row md:items-center md:justify-between">
 					<p>© 2026 Monolith Community Project</p>
 
 					<p>Community resource • Unofficial project site</p>

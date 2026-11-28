@@ -36,7 +36,7 @@ export default function RolesSection() {
 									{String(index + 1).padStart(2, "0")}
 								</span>
 
-								<span className="text-xs tracking-widest text-white/20 transition-colors group-hover:text-amber-400/60 group-focus-visible:text-amber-400/60">
+								<span className="text-xs tracking-widest text-white/55 transition-colors group-hover:text-amber-400/60 group-focus-visible:text-amber-400/60">
 									{role.shortName}
 								</span>
 							</div>
@@ -54,7 +54,7 @@ export default function RolesSection() {
 									{role.description}
 								</p>
 
-								<p className="mt-4 text-[10px] uppercase tracking-[0.3em] text-white/30 transition-colors group-hover:text-amber-400 group-focus-visible:text-amber-400">
+								<p className="mt-4 text-[10px] uppercase tracking-[0.3em] text-white/55 transition-colors group-hover:text-amber-400 group-focus-visible:text-amber-400">
 									View heroes →
 								</p>
 							</div>

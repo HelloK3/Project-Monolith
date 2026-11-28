@@ -59,7 +59,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 					<div className="w-full min-w-0 max-w-3xl">
 						<Link
 							href="/heroes"
-							className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/35 transition-colors hover:text-amber-400"
+							className="mb-12 inline-flex text-xs uppercase tracking-[0.35em] text-white/60 transition-colors hover:text-amber-400"
 						>
 							← Heroes
 						</Link>
@@ -85,7 +85,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 							{hero.traits.map((trait) => (
 								<span
 									key={trait}
-									className="text-[10px] uppercase tracking-[0.28em] text-white/35"
+									className="text-[10px] uppercase tracking-[0.28em] text-white/60"
 								>
 									{trait}
 								</span>
@@ -98,7 +98,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 				<div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 items-center gap-3 md:flex">
 					<span className="h-8 w-px bg-amber-400/60" />
 
-					<span className="text-[10px] uppercase tracking-[0.35em] text-white/25">
+					<span className="text-[10px] uppercase tracking-[0.35em] text-white/55">
 						Explore Hero
 					</span>
 				</div>
@@ -128,7 +128,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 						{/* Hero Profile */}
 						<div className="border border-white/10 bg-[#0b0f14]">
 							<div className="border-b border-white/10 px-6 py-5">
-								<p className="text-xs uppercase tracking-[0.3em] text-white/30">
+								<p className="text-xs uppercase tracking-[0.3em] text-white/55">
 									Hero Profile
 								</p>
 							</div>
@@ -136,7 +136,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 							<div className="grid grid-cols-2">
 								{/* Role */}
 								<div className="border-b border-r border-white/10 p-6">
-									<p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+									<p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
 										Role
 									</p>
 
@@ -147,7 +147,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 
 								{/* Class */}
 								<div className="border-b border-white/10 p-6">
-									<p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+									<p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
 										Class
 									</p>
 
@@ -158,7 +158,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 
 								{/* Difficulty */}
 								<div className="border-r border-white/10 p-6">
-									<p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+									<p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
 										Difficulty
 									</p>
 
@@ -169,7 +169,7 @@ export default function CompleteHeroProfile({ hero }: { hero: CompleteHero }) {
 
 								{/* Position */}
 								<div className="p-6">
-									<p className="text-[10px] uppercase tracking-[0.3em] text-white/30">
+									<p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
 										Position
 									</p>
 
