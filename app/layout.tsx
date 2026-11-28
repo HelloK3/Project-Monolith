@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { site } from "@/data/site";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -15,12 +16,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL(site.url),
 	title: {
 		default: "Monolith | Paragon v45 Reference",
 		template: "%s | Monolith",
 	},
 	description:
 		"An unofficial community reference for the heroes, abilities, and gameplay of Paragon v45.",
+	openGraph: {
+		siteName: site.name,
+		type: "website",
+		locale: "en_US",
+	},
+	twitter: {
+		card: "summary_large_image",
+	},
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
