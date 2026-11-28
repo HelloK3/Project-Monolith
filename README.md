@@ -22,7 +22,8 @@ Built with **Next.js 16** (App Router), **React 19**, **TypeScript** and **Tailw
   - every control has a visible focus outline;
   - Escape closes the mobile menu;
   - autoplaying videos pause for visitors who prefer reduced motion.
-- **Static and fast:** every hero and card page is pre-rendered at build time, and unknown URLs return a real 404.
+- **Static and fast:** every hero and card page is pre-rendered at build time, and unknown URLs return a real 404. Ability clips only download when they scroll near the screen, and each one shows a poster frame until it plays. On mobile, Lighthouse scores the hero pages at 99 for performance, with 100 for best practices and SEO.
+- **Social previews:** every hero has its own 1200×630 preview image (art, name, role and class) generated at build time with `next/og`, so links shared on LinkedIn or in a job application show a proper card.
 
 | Roster | Abilities |
 |---|---|
@@ -52,12 +53,12 @@ public/images/hero/<slug>/  portraits, banners and ability icons
 
 Cards go through the same pipeline with [`scripts/import-cards.mjs`](scripts/import-cards.mjs). It formats each effect's 20-step value curve using the game's own display hints (raw fractions, subtract-one percentages, times), and fills the card text with the value ranges, for example "7.4–18.6%". The four cards that have no stats in the game files are left out.
 
-[`scripts/import-heroes.mjs`](scripts/import-heroes.mjs) does the translation from game data to site data:
+[`scripts/import-heroes.mjs`](scripts/import-heroes.mjs) does the translation from game data to site data. The one thing the game files lack is a short description of each hero, so those are written by hand in [`scripts/hero-descriptions.mjs`](scripts/hero-descriptions.mjs) and checked against each hero's ability text.
 
 - **Lanes:** maps the game's internal position tags (`SafelaneOne`, `Midlane` and so on) to the site's five roles.
 - **Stats:** turns 30-level stat curves into a base value plus per-level growth.
 - **Ability text:** fills description tokens like `{Damage}` with real numbers. It also converts the game's rich-text markup (`<attr id="EnDmg"/>`, `<status id="stun"/>`) into typed parts that render as colored damage and status icons.
-- **Images:** copies and converts the art with ffmpeg.
+- **Images:** copies and converts the art, and grabs a poster frame from each ability clip, with ffmpeg.
 
 Its output is ordinary TypeScript, so the compiler checks every hero against the same types as hand-written code. Re-running the script regenerates everything, and hand-picked overrides live in the script, so they're never lost.
 
