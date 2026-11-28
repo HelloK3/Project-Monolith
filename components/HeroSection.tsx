@@ -6,6 +6,7 @@ export default function HeroSection() {
 			{/* Background video */}
 			<AmbientVideo
 				src="/videos/sparrow.webm"
+				poster="/videos/sparrow.jpg"
 				preload="auto"
 				className="absolute inset-0 h-full w-full object-cover"
 			/>

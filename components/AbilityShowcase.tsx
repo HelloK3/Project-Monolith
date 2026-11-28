@@ -109,7 +109,7 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 								className={`text-[10px] uppercase tracking-[0.3em] transition-colors ${
 									isActive
 										? "text-amber-400"
-										: "text-white/30 group-hover:text-white/50"
+										: "text-white/55 group-hover:text-white/75"
 								}`}
 							>
 								{ability.label}
@@ -153,7 +153,9 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 						<AmbientVideo
 							key={activeAbility.video}
 							src={activeAbility.video}
+							poster={activeAbility.poster}
 							decorative={false}
+							lazy
 							className="absolute inset-0 h-full w-full object-cover"
 						/>
 					)}
@@ -172,7 +174,7 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 
 						<span className="h-px w-8 bg-white/10" />
 
-						<p className="text-xs uppercase tracking-[0.3em] text-white/30">
+						<p className="text-xs uppercase tracking-[0.3em] text-white/55">
 							{activeAbility.type}
 						</p>
 					</div>
@@ -190,7 +192,7 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 						<div className="mt-8 grid max-w-xl grid-cols-2 border-t border-white/10 pt-5">
 							{activeAbility.cooldown !== "—" && (
 								<div className="pr-6">
-									<p className="text-[9px] uppercase tracking-[0.3em] text-white/30">
+									<p className="text-[9px] uppercase tracking-[0.3em] text-white/55">
 										Cooldown
 									</p>
 
@@ -208,7 +210,7 @@ export default function AbilityShowcase({ abilities }: AbilityShowcaseProps) {
 											: ""
 									}`}
 								>
-									<p className="text-[9px] uppercase tracking-[0.3em] text-white/30">
+									<p className="text-[9px] uppercase tracking-[0.3em] text-white/55">
 										Cost
 									</p>
 
