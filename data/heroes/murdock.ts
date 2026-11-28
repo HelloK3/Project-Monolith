@@ -7,7 +7,7 @@ export const murdock: CompleteHero = {
 	name: "Murdock",
 	slug: "murdock",
 	role: "carry",
-	description: "A ranged ranger built for Carry.",
+	description: "A bounty hunter whose shotgun rewards close range, while his ultimate snipes enemies across the entire map.",
 	heroClass: "Ranger",
 	position: "Carry",
 	traits: ["Marauder", "Attacker", "Burst", "Zoner"],
@@ -61,6 +61,7 @@ export const murdock: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/murdock/abilities/lmb.png",
 			video: "/videos/heroes/murdock/lmb.webm",
+			poster: "/videos/heroes/murdock/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -115,6 +116,7 @@ export const murdock: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/murdock/abilities/q.png",
 			video: "/videos/heroes/murdock/q.webm",
+			poster: "/videos/heroes/murdock/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -157,6 +159,7 @@ export const murdock: CompleteHero = {
 			cost: "100 Mana",
 			icon: "/images/hero/murdock/abilities/rmb.png",
 			video: "/videos/heroes/murdock/rmb.webm",
+			poster: "/videos/heroes/murdock/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -211,6 +214,7 @@ export const murdock: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/murdock/abilities/e.png",
 			video: "/videos/heroes/murdock/e.webm",
+			poster: "/videos/heroes/murdock/e.jpg",
 		},
 		{
 			key: "R",
@@ -254,6 +258,7 @@ export const murdock: CompleteHero = {
 			cost: "75 / 125 / 175 Mana",
 			icon: "/images/hero/murdock/abilities/r.png",
 			video: "/videos/heroes/murdock/r.webm",
+			poster: "/videos/heroes/murdock/r.jpg",
 		},
 	],
 	skins: [

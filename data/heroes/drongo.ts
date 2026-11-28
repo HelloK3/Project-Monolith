@@ -7,7 +7,7 @@ export const drongo: CompleteHero = {
 	name: "Drongo",
 	slug: "drongo",
 	role: "carry",
-	description: "A ranger built for Carry.",
+	description: "A wasteland gunslinger who softens up targets with radioactive rounds, a boomerang and a gag grenade before his shrapnel cannon finishes the job.",
 	heroClass: "Ranger",
 	position: "Carry",
 	traits: ["Marauder", "Attacker", "Sieger", "Controller"],
@@ -61,6 +61,7 @@ export const drongo: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/drongo/abilities/lmb.png",
 			video: "/videos/heroes/drongo/lmb.webm",
+			poster: "/videos/heroes/drongo/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -107,6 +108,7 @@ export const drongo: CompleteHero = {
 			cost: "120 Mana",
 			icon: "/images/hero/drongo/abilities/q.png",
 			video: "/videos/heroes/drongo/q.webm",
+			poster: "/videos/heroes/drongo/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -187,6 +189,7 @@ export const drongo: CompleteHero = {
 			cost: "75 / 90 / 105 / 120 Mana",
 			icon: "/images/hero/drongo/abilities/rmb.png",
 			video: "/videos/heroes/drongo/rmb.webm",
+			poster: "/videos/heroes/drongo/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -270,6 +273,7 @@ export const drongo: CompleteHero = {
 			cost: "55 Mana",
 			icon: "/images/hero/drongo/abilities/e.png",
 			video: "/videos/heroes/drongo/e.webm",
+			poster: "/videos/heroes/drongo/e.jpg",
 		},
 		{
 			key: "R",
@@ -329,6 +333,7 @@ export const drongo: CompleteHero = {
 			cost: "100 / 125 / 150 Mana",
 			icon: "/images/hero/drongo/abilities/r.png",
 			video: "/videos/heroes/drongo/r.webm",
+			poster: "/videos/heroes/drongo/r.jpg",
 		},
 	],
 };

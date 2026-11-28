@@ -35,6 +35,8 @@ export type Ability = {
 	icon: string;
 	artwork?: string;
 	video?: string;
+	/** Still frame shown before the video loads. */
+	poster?: string;
 };
 
 export type HeroStats = {

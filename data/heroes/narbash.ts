@@ -7,7 +7,7 @@ export const narbash: CompleteHero = {
 	name: "Narbash",
 	slug: "narbash",
 	role: "support",
-	description: "A melee fighter built for Support.",
+	description: "A drum-banging support who marches the team forward, heals with his songs and stuns with a crash bang boom.",
 	heroClass: "Fighter",
 	position: "Support",
 	traits: ["Guardian", "Controller", "Durable"],
@@ -61,6 +61,7 @@ export const narbash: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/narbash/abilities/lmb.png",
 			video: "/videos/heroes/narbash/lmb.webm",
+			poster: "/videos/heroes/narbash/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const narbash: CompleteHero = {
 			cost: "80 Mana",
 			icon: "/images/hero/narbash/abilities/q.png",
 			video: "/videos/heroes/narbash/q.webm",
+			poster: "/videos/heroes/narbash/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -158,6 +160,7 @@ export const narbash: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/narbash/abilities/rmb.png",
 			video: "/videos/heroes/narbash/rmb.webm",
+			poster: "/videos/heroes/narbash/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -209,6 +212,7 @@ export const narbash: CompleteHero = {
 			cost: "12 / 18 / 24 / 30 Mana",
 			icon: "/images/hero/narbash/abilities/e.png",
 			video: "/videos/heroes/narbash/e.webm",
+			poster: "/videos/heroes/narbash/e.jpg",
 		},
 		{
 			key: "R",
@@ -281,6 +285,7 @@ export const narbash: CompleteHero = {
 			cost: "75 / 100 / 125 Mana",
 			icon: "/images/hero/narbash/abilities/r.png",
 			video: "/videos/heroes/narbash/r.webm",
+			poster: "/videos/heroes/narbash/r.jpg",
 		},
 	],
 	skins: [

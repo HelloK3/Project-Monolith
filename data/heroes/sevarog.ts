@@ -7,7 +7,7 @@ export const sevarog: CompleteHero = {
 	name: "Sevarog",
 	slug: "sevarog",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Jungle.",
+	description: "A soul-hungry tank who grows stronger with every siphon and brings his hammer down in a colossal blow.",
 	heroClass: "Fighter",
 	position: "Offlane / Jungle",
 	traits: ["Attacker", "Initiator", "Durable", "Controller", "Sieger"],
@@ -61,6 +61,7 @@ export const sevarog: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/sevarog/abilities/lmb.png",
 			video: "/videos/heroes/sevarog/lmb.webm",
+			poster: "/videos/heroes/sevarog/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -271,6 +272,7 @@ export const sevarog: CompleteHero = {
 			cost: "25 Mana",
 			icon: "/images/hero/sevarog/abilities/q.png",
 			video: "/videos/heroes/sevarog/q.webm",
+			poster: "/videos/heroes/sevarog/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -296,6 +298,7 @@ export const sevarog: CompleteHero = {
 			cost: "30 Mana",
 			icon: "/images/hero/sevarog/abilities/rmb.png",
 			video: "/videos/heroes/sevarog/rmb.webm",
+			poster: "/videos/heroes/sevarog/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -389,6 +392,7 @@ export const sevarog: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/sevarog/abilities/e.png",
 			video: "/videos/heroes/sevarog/e.webm",
+			poster: "/videos/heroes/sevarog/e.jpg",
 		},
 		{
 			key: "R",
@@ -423,6 +427,7 @@ export const sevarog: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/sevarog/abilities/r.png",
 			video: "/videos/heroes/sevarog/r.webm",
+			poster: "/videos/heroes/sevarog/r.jpg",
 		},
 	],
 	skins: [

@@ -7,7 +7,7 @@ export const revenant: CompleteHero = {
 	name: "Revenant",
 	slug: "revenant",
 	role: "carry",
-	description: "A ranged ranger built for Carry.",
+	description: "A relentless gunslinger whose last bullet always crits, and who drags a single target into the Nether Realm to settle the duel.",
 	heroClass: "Ranger",
 	position: "Carry",
 	traits: ["Marauder", "Assassin", "Burst", "Attacker", "Ganker"],
@@ -78,6 +78,7 @@ export const revenant: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/revenant/abilities/lmb.png",
 			video: "/videos/heroes/revenant/lmb.webm",
+			poster: "/videos/heroes/revenant/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -120,6 +121,7 @@ export const revenant: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/revenant/abilities/q.png",
 			video: "/videos/heroes/revenant/q.webm",
+			poster: "/videos/heroes/revenant/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -174,6 +176,7 @@ export const revenant: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/revenant/abilities/rmb.png",
 			video: "/videos/heroes/revenant/rmb.webm",
+			poster: "/videos/heroes/revenant/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -246,6 +249,7 @@ export const revenant: CompleteHero = {
 			cost: "65 Mana",
 			icon: "/images/hero/revenant/abilities/e.png",
 			video: "/videos/heroes/revenant/e.webm",
+			poster: "/videos/heroes/revenant/e.jpg",
 		},
 		{
 			key: "R",
@@ -334,6 +338,7 @@ export const revenant: CompleteHero = {
 			cost: "100 Mana",
 			icon: "/images/hero/revenant/abilities/r.png",
 			video: "/videos/heroes/revenant/r.webm",
+			poster: "/videos/heroes/revenant/r.jpg",
 		},
 	],
 	skins: [

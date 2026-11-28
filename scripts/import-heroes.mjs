@@ -19,6 +19,7 @@
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { heroDescriptions } from "./hero-descriptions.mjs";
 
 const exportDir = process.argv[2];
 
@@ -314,6 +315,24 @@ function opaqueBounds(file) {
 }
 
 /** Crops a transparent render to the hero (plus a little room) and saves it as WebP. */
+/**
+ * A still frame from an ability clip, shown before the clip loads or for
+ * visitors who prefer reduced motion. Saved next to the clip as .jpg and only
+ * rebuilt when the clip is newer. Returns undefined if the clip is missing.
+ */
+function posterFor(video) {
+	const clip = path.join(root, "public", video);
+	if (!fs.existsSync(clip)) return undefined;
+
+	const poster = video.replace(/\.webm$/, ".jpg");
+	const file = path.join(root, "public", poster);
+	if (!fs.existsSync(file) || fs.statSync(file).mtimeMs < fs.statSync(clip).mtimeMs) {
+		// One second in skips the fade-in most clips start with.
+		ffmpeg("-ss", "1", "-i", clip, "-frames:v", "1", "-vf", "scale=854:-2", "-q:v", "5", "-update", "1", file);
+	}
+	return poster;
+}
+
 function saveCutout(from, to) {
 	fs.mkdirSync(path.dirname(to), { recursive: true });
 	const box = opaqueBounds(from);
@@ -434,6 +453,7 @@ for (const entry of manifest.heroes) {
 		}
 
 		const isPassive = /passive/i.test(ability.type ?? "");
+		const video = media?.video ?? `/videos/heroes/${slug}/${slot.toLowerCase()}.webm`;
 
 		return {
 			key: slot,
@@ -449,7 +469,8 @@ for (const entry of manifest.heroes) {
 			cost: rankText(ability.manaCost, " Mana"),
 			icon,
 			artwork: media?.artwork,
-			video: media?.video ?? `/videos/heroes/${slug}/${slot.toLowerCase()}.webm`,
+			video,
+			poster: posterFor(video),
 		};
 	});
 
@@ -462,7 +483,7 @@ for (const entry of manifest.heroes) {
 		name: hero.name,
 		slug,
 		role: lane.primary,
-		description: override.description ?? describe(hero, lane),
+		description: override.description ?? heroDescriptions[slug] ?? describe(hero, lane),
 		heroClass: hero.heroClass ?? "—",
 		position,
 		difficulty: hero.difficulty ?? undefined,

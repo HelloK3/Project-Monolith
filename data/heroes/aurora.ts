@@ -7,7 +7,7 @@ export const aurora: CompleteHero = {
 	name: "Aurora",
 	slug: "aurora",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Support.",
+	description: "An ice-wielding duelist who glides in on a trail of frost, freezes enemies in place and shatters the ground around her.",
 	heroClass: "Fighter",
 	position: "Offlane / Support",
 	traits: ["Elusive", "Controller", "Burst", "Attacker", "Zoner"],
@@ -61,6 +61,7 @@ export const aurora: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/aurora/abilities/lmb.png",
 			video: "/videos/heroes/aurora/lmb.webm",
+			poster: "/videos/heroes/aurora/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -86,6 +87,7 @@ export const aurora: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/aurora/abilities/q.png",
 			video: "/videos/heroes/aurora/q.webm",
+			poster: "/videos/heroes/aurora/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -119,6 +121,7 @@ export const aurora: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/aurora/abilities/rmb.png",
 			video: "/videos/heroes/aurora/rmb.webm",
+			poster: "/videos/heroes/aurora/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -206,6 +209,7 @@ export const aurora: CompleteHero = {
 			cost: "90 / 100 / 110 / 120 Mana",
 			icon: "/images/hero/aurora/abilities/e.png",
 			video: "/videos/heroes/aurora/e.webm",
+			poster: "/videos/heroes/aurora/e.jpg",
 		},
 		{
 			key: "R",
@@ -294,6 +298,7 @@ export const aurora: CompleteHero = {
 			cost: "100 / 150 / 200 Mana",
 			icon: "/images/hero/aurora/abilities/r.png",
 			video: "/videos/heroes/aurora/r.webm",
+			poster: "/videos/heroes/aurora/r.jpg",
 		},
 	],
 	skins: [

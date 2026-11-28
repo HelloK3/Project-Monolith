@@ -7,7 +7,7 @@ export const khaimera: CompleteHero = {
 	name: "Khaimera",
 	slug: "khaimera",
 	role: "jungle",
-	description: "A melee fighter built for Jungle who can also flex to Offlane.",
+	description: "A feral hunter who leaps from the jungle to ambush his prey, regenerates between fights and culls the wounded.",
 	heroClass: "Fighter",
 	position: "Jungle / Offlane",
 	traits: ["Assassin", "Attacker", "Wild", "Ganker"],
@@ -61,6 +61,7 @@ export const khaimera: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/khaimera/abilities/lmb.png",
 			video: "/videos/heroes/khaimera/lmb.webm",
+			poster: "/videos/heroes/khaimera/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -102,6 +103,7 @@ export const khaimera: CompleteHero = {
 			cost: "45 Mana",
 			icon: "/images/hero/khaimera/abilities/q.png",
 			video: "/videos/heroes/khaimera/q.webm",
+			poster: "/videos/heroes/khaimera/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -174,6 +176,7 @@ export const khaimera: CompleteHero = {
 			cost: "40 Mana",
 			icon: "/images/hero/khaimera/abilities/rmb.png",
 			video: "/videos/heroes/khaimera/rmb.webm",
+			poster: "/videos/heroes/khaimera/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -211,6 +214,7 @@ export const khaimera: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/khaimera/abilities/e.png",
 			video: "/videos/heroes/khaimera/e.webm",
+			poster: "/videos/heroes/khaimera/e.jpg",
 		},
 		{
 			key: "R",
@@ -304,6 +308,7 @@ export const khaimera: CompleteHero = {
 			cost: "75 / 100 / 125 Mana",
 			icon: "/images/hero/khaimera/abilities/r.png",
 			video: "/videos/heroes/khaimera/r.webm",
+			poster: "/videos/heroes/khaimera/r.jpg",
 		},
 	],
 	skins: [

@@ -7,7 +7,7 @@ export const crunch: CompleteHero = {
 	name: "Crunch",
 	slug: "crunch",
 	role: "jungle",
-	description: "A fighter built for Jungle.",
+	description: "A mechanised brawler who chains three crunching punches together and comes back for a fourth.",
 	heroClass: "Fighter",
 	position: "Jungle",
 	traits: ["Initiator", "Burst", "Wild", "Controller", "Attacker"],
@@ -61,6 +61,7 @@ export const crunch: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/crunch/abilities/lmb.png",
 			video: "/videos/heroes/crunch/lmb.webm",
+			poster: "/videos/heroes/crunch/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -136,6 +137,7 @@ export const crunch: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/crunch/abilities/q.png",
 			video: "/videos/heroes/crunch/q.webm",
+			poster: "/videos/heroes/crunch/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -232,6 +234,7 @@ export const crunch: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/crunch/abilities/rmb.png",
 			video: "/videos/heroes/crunch/rmb.webm",
+			poster: "/videos/heroes/crunch/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -320,6 +323,7 @@ export const crunch: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/crunch/abilities/e.png",
 			video: "/videos/heroes/crunch/e.webm",
+			poster: "/videos/heroes/crunch/e.jpg",
 		},
 		{
 			key: "R",
@@ -390,6 +394,7 @@ export const crunch: CompleteHero = {
 			cost: "30 Mana",
 			icon: "/images/hero/crunch/abilities/r.png",
 			video: "/videos/heroes/crunch/r.webm",
+			poster: "/videos/heroes/crunch/r.jpg",
 		},
 	],
 	skins: [

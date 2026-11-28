@@ -7,7 +7,7 @@ export const wraith: CompleteHero = {
 	name: "Wraith",
 	slug: "wraith",
 	role: "mid",
-	description: "A ranger built for Mid Lane who can also flex to Support.",
+	description: "A cloaked sniper who reveals enemies with sonar wards, shoots straight through walls and hides his whole team in the shadow plane.",
 	heroClass: "Ranger",
 	position: "Mid Lane / Support",
 	traits: ["Attacker", "Controller", "Ganker", "Elusive"],
@@ -61,6 +61,7 @@ export const wraith: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/wraith/abilities/lmb.png",
 			video: "/videos/heroes/wraith/lmb.webm",
+			poster: "/videos/heroes/wraith/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -102,6 +103,7 @@ export const wraith: CompleteHero = {
 			cost: "25 Mana",
 			icon: "/images/hero/wraith/abilities/q.png",
 			video: "/videos/heroes/wraith/q.webm",
+			poster: "/videos/heroes/wraith/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -152,6 +154,7 @@ export const wraith: CompleteHero = {
 			cost: "70 / 80 / 90 / 100 Mana",
 			icon: "/images/hero/wraith/abilities/rmb.png",
 			video: "/videos/heroes/wraith/rmb.webm",
+			poster: "/videos/heroes/wraith/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -177,6 +180,7 @@ export const wraith: CompleteHero = {
 			cost: "70 Mana",
 			icon: "/images/hero/wraith/abilities/e.png",
 			video: "/videos/heroes/wraith/e.webm",
+			poster: "/videos/heroes/wraith/e.jpg",
 		},
 		{
 			key: "R",
@@ -219,6 +223,7 @@ export const wraith: CompleteHero = {
 			cost: "75 / 125 / 175 Mana",
 			icon: "/images/hero/wraith/abilities/r.png",
 			video: "/videos/heroes/wraith/r.webm",
+			poster: "/videos/heroes/wraith/r.jpg",
 		},
 	],
 	skins: [

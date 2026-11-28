@@ -7,7 +7,7 @@ export const grimExe: CompleteHero = {
 	name: "Grim.EXE",
 	slug: "grim-exe",
 	role: "carry",
-	description: "A ranged ranger built for Carry.",
+	description: "A combat robot that shreds targets with its pulse cannon, deflects incoming abilities and sends a homing orb through walls to finish them.",
 	heroClass: "Ranger",
 	position: "Carry",
 	traits: ["Marauder", "Attacker", "Burst"],
@@ -61,6 +61,7 @@ export const grimExe: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/grim-exe/abilities/lmb.png",
 			video: "/videos/heroes/grim-exe/lmb.webm",
+			poster: "/videos/heroes/grim-exe/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -95,6 +96,7 @@ export const grimExe: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/grim-exe/abilities/q.png",
 			video: "/videos/heroes/grim-exe/q.webm",
+			poster: "/videos/heroes/grim-exe/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -137,6 +139,7 @@ export const grimExe: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/grim-exe/abilities/rmb.png",
 			video: "/videos/heroes/grim-exe/rmb.webm",
+			poster: "/videos/heroes/grim-exe/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -209,6 +212,7 @@ export const grimExe: CompleteHero = {
 			cost: "10 / 15 / 20 / 25 Mana",
 			icon: "/images/hero/grim-exe/abilities/e.png",
 			video: "/videos/heroes/grim-exe/e.webm",
+			poster: "/videos/heroes/grim-exe/e.jpg",
 		},
 		{
 			key: "R",
@@ -243,6 +247,7 @@ export const grimExe: CompleteHero = {
 			cost: "75 / 125 / 175 Mana",
 			icon: "/images/hero/grim-exe/abilities/r.png",
 			video: "/videos/heroes/grim-exe/r.webm",
+			poster: "/videos/heroes/grim-exe/r.jpg",
 		},
 	],
 	skins: [

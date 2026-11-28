@@ -7,7 +7,7 @@ export const ltBelica: CompleteHero = {
 	name: "Lt. Belica",
 	slug: "lt-belica",
 	role: "mid",
-	description: "A ranged ranger built for Mid Lane who can also flex to Support.",
+	description: "A tactical commander who drains enemy mana with her void drone, then punishes the drained with a neural disruptor.",
 	heroClass: "Ranger",
 	position: "Mid Lane / Support",
 	traits: ["Controller", "Zoner", "Burst", "Sieger", "Guardian"],
@@ -61,6 +61,7 @@ export const ltBelica: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/lt-belica/abilities/lmb.png",
 			video: "/videos/heroes/lt-belica/lmb.webm",
+			poster: "/videos/heroes/lt-belica/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -116,6 +117,7 @@ export const ltBelica: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/lt-belica/abilities/q.png",
 			video: "/videos/heroes/lt-belica/q.webm",
+			poster: "/videos/heroes/lt-belica/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -175,6 +177,7 @@ export const ltBelica: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/lt-belica/abilities/rmb.png",
 			video: "/videos/heroes/lt-belica/rmb.webm",
+			poster: "/videos/heroes/lt-belica/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -234,6 +237,7 @@ export const ltBelica: CompleteHero = {
 			cost: "110 / 130 / 150 / 170 Mana",
 			icon: "/images/hero/lt-belica/abilities/e.png",
 			video: "/videos/heroes/lt-belica/e.webm",
+			poster: "/videos/heroes/lt-belica/e.jpg",
 		},
 		{
 			key: "R",
@@ -277,6 +281,7 @@ export const ltBelica: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/lt-belica/abilities/r.png",
 			video: "/videos/heroes/lt-belica/r.webm",
+			poster: "/videos/heroes/lt-belica/r.jpg",
 		},
 	],
 	skins: [

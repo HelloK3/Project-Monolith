@@ -7,7 +7,7 @@ export const serath: CompleteHero = {
 	name: "Serath",
 	slug: "serath",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Carry.",
+	description: "A fallen angel who ascends above the fight, dives on her target and carves through anyone who stands near.",
 	heroClass: "Fighter",
 	position: "Offlane / Carry",
 	traits: ["Marauder", "Attacker", "Elusive", "Assassin", "Durable"],
@@ -61,6 +61,7 @@ export const serath: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/serath/abilities/lmb.png",
 			video: "/videos/heroes/serath/lmb.webm",
+			poster: "/videos/heroes/serath/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const serath: CompleteHero = {
 			cost: "25 Mana",
 			icon: "/images/hero/serath/abilities/q.png",
 			video: "/videos/heroes/serath/q.webm",
+			poster: "/videos/heroes/serath/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -175,6 +177,7 @@ export const serath: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/serath/abilities/rmb.png",
 			video: "/videos/heroes/serath/rmb.webm",
+			poster: "/videos/heroes/serath/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -217,6 +220,7 @@ export const serath: CompleteHero = {
 			cost: "45 Mana",
 			icon: "/images/hero/serath/abilities/e.png",
 			video: "/videos/heroes/serath/e.webm",
+			poster: "/videos/heroes/serath/e.jpg",
 		},
 		{
 			key: "R",
@@ -347,6 +351,7 @@ export const serath: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/serath/abilities/r.png",
 			video: "/videos/heroes/serath/r.webm",
+			poster: "/videos/heroes/serath/r.jpg",
 		},
 	],
 	skins: [

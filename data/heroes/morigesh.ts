@@ -7,7 +7,7 @@ export const morigesh: CompleteHero = {
 	name: "Morigesh",
 	slug: "morigesh",
 	role: "mid",
-	description: "A ranger built for Mid Lane who can also flex to Offlane.",
+	description: "A voodoo witch who marks her target, plagues it with swarms and hives, and curses it from afar.",
 	heroClass: "Ranger",
 	position: "Mid Lane / Offlane",
 	traits: ["Burst", "Ganker", "Elusive", "Sieger", "Durable"],
@@ -61,6 +61,7 @@ export const morigesh: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/morigesh/abilities/lmb.png",
 			video: "/videos/heroes/morigesh/lmb.webm",
+			poster: "/videos/heroes/morigesh/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -141,6 +142,7 @@ export const morigesh: CompleteHero = {
 			cost: "110 / 120 / 130 / 140 Mana",
 			icon: "/images/hero/morigesh/abilities/q.png",
 			video: "/videos/heroes/morigesh/q.webm",
+			poster: "/videos/heroes/morigesh/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -175,6 +177,7 @@ export const morigesh: CompleteHero = {
 			cost: "80 / 85 / 90 / 95 Mana",
 			icon: "/images/hero/morigesh/abilities/rmb.png",
 			video: "/videos/heroes/morigesh/rmb.webm",
+			poster: "/videos/heroes/morigesh/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -266,6 +269,7 @@ export const morigesh: CompleteHero = {
 			cost: "80 Mana",
 			icon: "/images/hero/morigesh/abilities/e.png",
 			video: "/videos/heroes/morigesh/e.webm",
+			poster: "/videos/heroes/morigesh/e.jpg",
 		},
 		{
 			key: "R",
@@ -300,6 +304,7 @@ export const morigesh: CompleteHero = {
 			cost: "100 / 140 / 180 Mana",
 			icon: "/images/hero/morigesh/abilities/r.png",
 			video: "/videos/heroes/morigesh/r.webm",
+			poster: "/videos/heroes/morigesh/r.jpg",
 		},
 	],
 	skins: [

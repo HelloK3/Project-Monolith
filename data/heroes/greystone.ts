@@ -7,7 +7,7 @@ export const greystone: CompleteHero = {
 	name: "Greystone",
 	slug: "greystone",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Jungle.",
+	description: "A noble knight who charges into the fray, deflects incoming hits and reforges himself to fight on.",
 	heroClass: "Fighter",
 	position: "Offlane / Jungle",
 	traits: ["Durable", "Initiator", "Attacker", "Elusive", "Wild"],
@@ -61,6 +61,7 @@ export const greystone: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/greystone/abilities/lmb.png",
 			video: "/videos/heroes/greystone/lmb.webm",
+			poster: "/videos/heroes/greystone/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const greystone: CompleteHero = {
 			cost: "65 / 70 / 75 / 80 Mana",
 			icon: "/images/hero/greystone/abilities/q.png",
 			video: "/videos/heroes/greystone/q.webm",
+			poster: "/videos/heroes/greystone/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -145,6 +147,7 @@ export const greystone: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/greystone/abilities/rmb.png",
 			video: "/videos/heroes/greystone/rmb.webm",
+			poster: "/videos/heroes/greystone/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -174,6 +177,7 @@ export const greystone: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/greystone/abilities/e.png",
 			video: "/videos/heroes/greystone/e.webm",
+			poster: "/videos/heroes/greystone/e.jpg",
 		},
 		{
 			key: "R",
@@ -283,6 +287,7 @@ export const greystone: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/greystone/abilities/r.png",
 			video: "/videos/heroes/greystone/r.webm",
+			poster: "/videos/heroes/greystone/r.jpg",
 		},
 	],
 	skins: [

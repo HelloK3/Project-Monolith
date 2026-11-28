@@ -7,7 +7,7 @@ export const wukong: CompleteHero = {
 	name: "Wukong",
 	slug: "wukong",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Jungle.",
+	description: "A monkey king who hops between clouds, swings an enchanted staff and splits into an army of clones.",
 	heroClass: "Fighter",
 	position: "Offlane / Jungle",
 	traits: ["Marauder", "Attacker", "Elusive", "Sieger", "Zoner"],
@@ -61,6 +61,7 @@ export const wukong: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/wukong/abilities/lmb.png",
 			video: "/videos/heroes/wukong/lmb.webm",
+			poster: "/videos/heroes/wukong/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -185,6 +186,7 @@ export const wukong: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/wukong/abilities/q.png",
 			video: "/videos/heroes/wukong/q.webm",
+			poster: "/videos/heroes/wukong/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -264,6 +266,7 @@ export const wukong: CompleteHero = {
 			cost: "90 Mana",
 			icon: "/images/hero/wukong/abilities/rmb.png",
 			video: "/videos/heroes/wukong/rmb.webm",
+			poster: "/videos/heroes/wukong/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -367,6 +370,7 @@ export const wukong: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/wukong/abilities/e.png",
 			video: "/videos/heroes/wukong/e.webm",
+			poster: "/videos/heroes/wukong/e.jpg",
 		},
 		{
 			key: "R",
@@ -412,6 +416,7 @@ export const wukong: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/wukong/abilities/r.png",
 			video: "/videos/heroes/wukong/r.webm",
+			poster: "/videos/heroes/wukong/r.jpg",
 		},
 	],
 };

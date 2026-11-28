@@ -7,7 +7,7 @@ export const kwang: CompleteHero = {
 	name: "Kwang",
 	slug: "kwang",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Jungle.",
+	description: "A warrior who throws his sword and calls down the heavens, striking wherever it lands.",
 	heroClass: "Fighter",
 	position: "Offlane / Jungle",
 	traits: ["Initiator", "Wild", "Durable", "Attacker", "Ganker"],
@@ -57,6 +57,7 @@ export const kwang: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/kwang/abilities/lmb.png",
 			video: "/videos/heroes/kwang/lmb.webm",
+			poster: "/videos/heroes/kwang/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -99,6 +100,7 @@ export const kwang: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/kwang/abilities/q.png",
 			video: "/videos/heroes/kwang/q.webm",
+			poster: "/videos/heroes/kwang/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -175,6 +177,7 @@ export const kwang: CompleteHero = {
 			cost: "50 / 55 / 60 / 65 Mana",
 			icon: "/images/hero/kwang/abilities/rmb.png",
 			video: "/videos/heroes/kwang/rmb.webm",
+			poster: "/videos/heroes/kwang/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -238,6 +241,7 @@ export const kwang: CompleteHero = {
 			cost: "1 / 2 / 3 / 4 Mana",
 			icon: "/images/hero/kwang/abilities/e.png",
 			video: "/videos/heroes/kwang/e.webm",
+			poster: "/videos/heroes/kwang/e.jpg",
 		},
 		{
 			key: "R",
@@ -310,6 +314,7 @@ export const kwang: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/kwang/abilities/r.png",
 			video: "/videos/heroes/kwang/r.webm",
+			poster: "/videos/heroes/kwang/r.jpg",
 		},
 	],
 	skins: [

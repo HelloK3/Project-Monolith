@@ -7,7 +7,7 @@ export const grux: CompleteHero = {
 	name: "Grux",
 	slug: "grux",
 	role: "jungle",
-	description: "A melee fighter built for Jungle who can also flex to Offlane.",
+	description: "A brutal jungler who grabs enemies, smashes them into the ground and calls out a challenge no one can escape.",
 	heroClass: "Fighter",
 	position: "Jungle / Offlane",
 	traits: ["Attacker", "Ganker", "Initiator", "Wild", "Sieger", "Controller"],
@@ -61,6 +61,7 @@ export const grux: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/grux/abilities/lmb.png",
 			video: "/videos/heroes/grux/lmb.webm",
+			poster: "/videos/heroes/grux/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -108,6 +109,7 @@ export const grux: CompleteHero = {
 			cost: "60 Mana",
 			icon: "/images/hero/grux/abilities/q.png",
 			video: "/videos/heroes/grux/q.webm",
+			poster: "/videos/heroes/grux/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -158,6 +160,7 @@ export const grux: CompleteHero = {
 			cost: "20 Mana",
 			icon: "/images/hero/grux/abilities/rmb.png",
 			video: "/videos/heroes/grux/rmb.webm",
+			poster: "/videos/heroes/grux/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -208,6 +211,7 @@ export const grux: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/grux/abilities/e.png",
 			video: "/videos/heroes/grux/e.webm",
+			poster: "/videos/heroes/grux/e.jpg",
 		},
 		{
 			key: "R",
@@ -250,6 +254,7 @@ export const grux: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/grux/abilities/r.png",
 			video: "/videos/heroes/grux/r.webm",
+			poster: "/videos/heroes/grux/r.jpg",
 		},
 	],
 	skins: [

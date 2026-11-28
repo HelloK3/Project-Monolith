@@ -63,6 +63,7 @@ export const rampage: CompleteHero = {
 			icon: "/images/hero/rampage/rampage-swipe.png",
 			artwork: "/images/hero/rampage/rampage-swipe.png",
 			video: "/videos/heroes/rampage/swipe.webm",
+			poster: "/videos/heroes/rampage/swipe.jpg",
 		},
 		{
 			key: "Q",
@@ -119,6 +120,7 @@ export const rampage: CompleteHero = {
 			icon: "/images/hero/rampage/rampage-boulder-throw.png",
 			artwork: "/images/hero/rampage/rampage-boulder-throw.png",
 			video: "/videos/heroes/rampage/boulder-throw.webm",
+			poster: "/videos/heroes/rampage/boulder-throw.jpg",
 		},
 		{
 			key: "RMB",
@@ -183,6 +185,7 @@ export const rampage: CompleteHero = {
 			icon: "/images/hero/rampage/rampage-rumble.png",
 			artwork: "/images/hero/rampage/rampage-rumble.png",
 			video: "/videos/heroes/rampage/rumble.webm",
+			poster: "/videos/heroes/rampage/rumble.jpg",
 		},
 		{
 			key: "E",
@@ -246,6 +249,7 @@ export const rampage: CompleteHero = {
 			icon: "/images/hero/rampage/rampage-king-of-the-jungle.png",
 			artwork: "/images/hero/rampage/rampage-king-of-the-jungle.png",
 			video: "/videos/heroes/rampage/king-of-the-jungle.webm",
+			poster: "/videos/heroes/rampage/king-of-the-jungle.jpg",
 		},
 		{
 			key: "R",
@@ -297,6 +301,7 @@ export const rampage: CompleteHero = {
 			icon: "/images/hero/rampage/rampage-enraged.png",
 			artwork: "/images/hero/rampage/rampage-enraged.png",
 			video: "/videos/heroes/rampage/enraged.webm",
+			poster: "/videos/heroes/rampage/enraged.jpg",
 		},
 	],
 };

@@ -7,7 +7,7 @@ export const sparrow: CompleteHero = {
 	name: "Sparrow",
 	slug: "sparrow",
 	role: "carry",
-	description: "A ranged ranger built for Carry.",
+	description: "A precise archer who shoots down structures and heroes alike with piercing shots and a hail of arrows.",
 	heroClass: "Ranger",
 	position: "Carry",
 	traits: ["Marauder", "Attacker", "Sieger"],
@@ -61,6 +61,7 @@ export const sparrow: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/sparrow/abilities/lmb.png",
 			video: "/videos/heroes/sparrow/lmb.webm",
+			poster: "/videos/heroes/sparrow/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const sparrow: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/sparrow/abilities/q.png",
 			video: "/videos/heroes/sparrow/q.webm",
+			poster: "/videos/heroes/sparrow/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -153,6 +155,7 @@ export const sparrow: CompleteHero = {
 			cost: "55 / 65 / 75 / 85 Mana",
 			icon: "/images/hero/sparrow/abilities/rmb.png",
 			video: "/videos/heroes/sparrow/rmb.webm",
+			poster: "/videos/heroes/sparrow/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -190,6 +193,7 @@ export const sparrow: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/sparrow/abilities/e.png",
 			video: "/videos/heroes/sparrow/e.webm",
+			poster: "/videos/heroes/sparrow/e.jpg",
 		},
 		{
 			key: "R",
@@ -231,6 +235,7 @@ export const sparrow: CompleteHero = {
 			cost: "100 Mana",
 			icon: "/images/hero/sparrow/abilities/r.png",
 			video: "/videos/heroes/sparrow/r.webm",
+			poster: "/videos/heroes/sparrow/r.jpg",
 		},
 	],
 	skins: [

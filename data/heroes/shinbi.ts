@@ -7,7 +7,7 @@ export const shinbi: CompleteHero = {
 	name: "Shinbi",
 	slug: "shinbi",
 	role: "mid",
-	description: "A melee fighter built for Mid Lane who can also flex to Jungle.",
+	description: "A rhythm-driven assassin who dashes in and out, marking enemies with spirit wolves before an All-Kill finishes the job.",
 	heroClass: "Fighter",
 	position: "Mid Lane / Jungle",
 	traits: ["Assassin", "Burst", "Ganker", "Elusive", "Sieger"],
@@ -61,6 +61,7 @@ export const shinbi: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/shinbi/abilities/lmb.png",
 			video: "/videos/heroes/shinbi/lmb.webm",
+			poster: "/videos/heroes/shinbi/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const shinbi: CompleteHero = {
 			cost: "50 / 54 / 58 / 62 Mana",
 			icon: "/images/hero/shinbi/abilities/q.png",
 			video: "/videos/heroes/shinbi/q.webm",
+			poster: "/videos/heroes/shinbi/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -153,6 +155,7 @@ export const shinbi: CompleteHero = {
 			cost: "80 / 90 / 100 / 110 Mana",
 			icon: "/images/hero/shinbi/abilities/rmb.png",
 			video: "/videos/heroes/shinbi/rmb.webm",
+			poster: "/videos/heroes/shinbi/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -216,6 +219,7 @@ export const shinbi: CompleteHero = {
 			cost: "110 Mana",
 			icon: "/images/hero/shinbi/abilities/e.png",
 			video: "/videos/heroes/shinbi/e.webm",
+			poster: "/videos/heroes/shinbi/e.jpg",
 		},
 		{
 			key: "R",
@@ -286,6 +290,7 @@ export const shinbi: CompleteHero = {
 			cost: "100 / 150 / 200 Mana",
 			icon: "/images/hero/shinbi/abilities/r.png",
 			video: "/videos/heroes/shinbi/r.webm",
+			poster: "/videos/heroes/shinbi/r.jpg",
 		},
 	],
 	skins: [

@@ -7,7 +7,7 @@ export const yin: CompleteHero = {
 	name: "Yin",
 	slug: "yin",
 	role: "carry",
-	description: "A melee fighter built for Carry who can also flex to Offlane.",
+	description: "A whip-wielding fighter who lashes out with kicks and gusts of wind, then turns an enemy's own attacks against them.",
 	heroClass: "Fighter",
 	position: "Carry / Offlane",
 	traits: ["Marauder", "Attacker", "Elusive", "Assassin"],
@@ -61,6 +61,7 @@ export const yin: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/yin/abilities/lmb.png",
 			video: "/videos/heroes/yin/lmb.webm",
+			poster: "/videos/heroes/yin/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const yin: CompleteHero = {
 			cost: "50 Mana",
 			icon: "/images/hero/yin/abilities/q.png",
 			video: "/videos/heroes/yin/q.webm",
+			poster: "/videos/heroes/yin/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -128,6 +130,7 @@ export const yin: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/yin/abilities/rmb.png",
 			video: "/videos/heroes/yin/rmb.webm",
+			poster: "/videos/heroes/yin/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -169,6 +172,7 @@ export const yin: CompleteHero = {
 			cost: "25 Mana",
 			icon: "/images/hero/yin/abilities/e.png",
 			video: "/videos/heroes/yin/e.webm",
+			poster: "/videos/heroes/yin/e.jpg",
 		},
 		{
 			key: "R",
@@ -211,6 +215,7 @@ export const yin: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/yin/abilities/r.png",
 			video: "/videos/heroes/yin/r.webm",
+			poster: "/videos/heroes/yin/r.jpg",
 		},
 	],
 };

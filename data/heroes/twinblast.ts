@@ -7,7 +7,7 @@ export const twinblast: CompleteHero = {
 	name: "TwinBlast",
 	slug: "twinblast",
 	role: "carry",
-	description: "A ranged ranger built for Carry.",
+	description: "A dual-pistol showman who fires nonstop, rockets out of trouble and ventilates anything in front of him.",
 	heroClass: "Ranger",
 	position: "Carry",
 	traits: ["Marauder", "Attacker", "Elusive", "Burst"],
@@ -77,6 +77,7 @@ export const twinblast: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/twinblast/abilities/lmb.png",
 			video: "/videos/heroes/twinblast/lmb.webm",
+			poster: "/videos/heroes/twinblast/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -118,6 +119,7 @@ export const twinblast: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/twinblast/abilities/q.png",
 			video: "/videos/heroes/twinblast/q.webm",
+			poster: "/videos/heroes/twinblast/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -190,6 +192,7 @@ export const twinblast: CompleteHero = {
 			cost: "35 Mana",
 			icon: "/images/hero/twinblast/abilities/rmb.png",
 			video: "/videos/heroes/twinblast/rmb.webm",
+			poster: "/videos/heroes/twinblast/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -223,6 +226,7 @@ export const twinblast: CompleteHero = {
 			cost: "40 / 30 / 20 / 10 Mana",
 			icon: "/images/hero/twinblast/abilities/e.png",
 			video: "/videos/heroes/twinblast/e.webm",
+			poster: "/videos/heroes/twinblast/e.jpg",
 		},
 		{
 			key: "R",
@@ -273,6 +277,7 @@ export const twinblast: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/twinblast/abilities/r.png",
 			video: "/videos/heroes/twinblast/r.webm",
+			poster: "/videos/heroes/twinblast/r.jpg",
 		},
 	],
 	skins: [

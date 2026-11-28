@@ -7,7 +7,7 @@ export const dekker: CompleteHero = {
 	name: "Dekker",
 	slug: "dekker",
 	role: "support",
-	description: "A ranged ranger built for Support.",
+	description: "A tactical support who traps enemies in stasis, fences them in with containment fields and rockets out of danger.",
 	heroClass: "Ranger",
 	position: "Support",
 	traits: ["Guardian", "Controller", "Zoner", "Elusive"],
@@ -61,6 +61,7 @@ export const dekker: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/dekker/abilities/lmb.png",
 			video: "/videos/heroes/dekker/lmb.webm",
+			poster: "/videos/heroes/dekker/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -116,6 +117,7 @@ export const dekker: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/dekker/abilities/q.png",
 			video: "/videos/heroes/dekker/q.webm",
+			poster: "/videos/heroes/dekker/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -133,6 +135,7 @@ export const dekker: CompleteHero = {
 			cost: "25 Mana",
 			icon: "/images/hero/dekker/abilities/rmb.png",
 			video: "/videos/heroes/dekker/rmb.webm",
+			poster: "/videos/heroes/dekker/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -197,6 +200,7 @@ export const dekker: CompleteHero = {
 			cost: "110 / 120 / 130 / 140 Mana",
 			icon: "/images/hero/dekker/abilities/e.png",
 			video: "/videos/heroes/dekker/e.webm",
+			poster: "/videos/heroes/dekker/e.jpg",
 		},
 		{
 			key: "R",
@@ -222,6 +226,7 @@ export const dekker: CompleteHero = {
 			cost: "150 / 225 / 300 Mana",
 			icon: "/images/hero/dekker/abilities/r.png",
 			video: "/videos/heroes/dekker/r.webm",
+			poster: "/videos/heroes/dekker/r.jpg",
 		},
 	],
 	skins: [

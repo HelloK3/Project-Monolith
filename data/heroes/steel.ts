@@ -7,7 +7,7 @@ export const steel: CompleteHero = {
 	name: "Steel",
 	slug: "steel",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Support.",
+	description: "A walking fortress who plants his shield to block projectiles, bashes enemies aside and slams them into the ground.",
 	heroClass: "Fighter",
 	position: "Offlane / Support",
 	traits: ["Initiator", "Guardian", "Durable", "Attacker", "Zoner"],
@@ -61,6 +61,7 @@ export const steel: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/steel/abilities/lmb.png",
 			video: "/videos/heroes/steel/lmb.webm",
+			poster: "/videos/heroes/steel/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -112,6 +113,7 @@ export const steel: CompleteHero = {
 			cost: "70 Mana",
 			icon: "/images/hero/steel/abilities/q.png",
 			video: "/videos/heroes/steel/q.webm",
+			poster: "/videos/heroes/steel/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -175,6 +177,7 @@ export const steel: CompleteHero = {
 			cost: "40 Mana",
 			icon: "/images/hero/steel/abilities/rmb.png",
 			video: "/videos/heroes/steel/rmb.webm",
+			poster: "/videos/heroes/steel/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -237,6 +240,7 @@ export const steel: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/steel/abilities/e.png",
 			video: "/videos/heroes/steel/e.webm",
+			poster: "/videos/heroes/steel/e.jpg",
 		},
 		{
 			key: "R",
@@ -292,6 +296,7 @@ export const steel: CompleteHero = {
 			cost: "75 / 110 / 145 Mana",
 			icon: "/images/hero/steel/abilities/r.png",
 			video: "/videos/heroes/steel/r.webm",
+			poster: "/videos/heroes/steel/r.jpg",
 		},
 	],
 	skins: [

@@ -7,7 +7,7 @@ export const gadget: CompleteHero = {
 	name: "Gadget",
 	slug: "gadget",
 	role: "mid",
-	description: "A ranged ranger built for Mid Lane who can also flex to Support.",
+	description: "An inventive mage who controls space with sticky mines, speed gates and a Tesla dome that punishes anyone who stays inside.",
 	heroClass: "Ranger",
 	position: "Mid Lane / Support",
 	traits: ["Sieger", "Zoner", "Burst", "Guardian", "Elusive"],
@@ -61,6 +61,7 @@ export const gadget: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/gadget/abilities/lmb.png",
 			video: "/videos/heroes/gadget/lmb.webm",
+			poster: "/videos/heroes/gadget/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const gadget: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/gadget/abilities/q.png",
 			video: "/videos/heroes/gadget/q.webm",
+			poster: "/videos/heroes/gadget/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -175,6 +177,7 @@ export const gadget: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/gadget/abilities/rmb.png",
 			video: "/videos/heroes/gadget/rmb.webm",
+			poster: "/videos/heroes/gadget/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -217,6 +220,7 @@ export const gadget: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/gadget/abilities/e.png",
 			video: "/videos/heroes/gadget/e.webm",
+			poster: "/videos/heroes/gadget/e.jpg",
 		},
 		{
 			key: "R",
@@ -305,6 +309,7 @@ export const gadget: CompleteHero = {
 			cost: "150 / 225 / 300 Mana",
 			icon: "/images/hero/gadget/abilities/r.png",
 			video: "/videos/heroes/gadget/r.webm",
+			poster: "/videos/heroes/gadget/r.jpg",
 		},
 	],
 	skins: [

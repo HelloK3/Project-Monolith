@@ -7,7 +7,7 @@ export const terra: CompleteHero = {
 	name: "Terra",
 	slug: "terra",
 	role: "jungle",
-	description: "A melee fighter built for Jungle who can also flex to Offlane.",
+	description: "A shield-bearing warrior who deflects incoming blows, stuns with a deafening command and shrugs off crowd control.",
 	heroClass: "Fighter",
 	position: "Jungle / Offlane",
 	traits: ["Durable", "Wild", "Ganker", "Guardian"],
@@ -57,6 +57,7 @@ export const terra: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/terra/abilities/lmb.png",
 			video: "/videos/heroes/terra/lmb.webm",
+			poster: "/videos/heroes/terra/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -91,6 +92,7 @@ export const terra: CompleteHero = {
 			cost: "60 / 65 / 70 / 75 Mana",
 			icon: "/images/hero/terra/abilities/q.png",
 			video: "/videos/heroes/terra/q.webm",
+			poster: "/videos/heroes/terra/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -134,6 +136,7 @@ export const terra: CompleteHero = {
 			cost: "25 Mana",
 			icon: "/images/hero/terra/abilities/rmb.png",
 			video: "/videos/heroes/terra/rmb.webm",
+			poster: "/videos/heroes/terra/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -189,6 +192,7 @@ export const terra: CompleteHero = {
 			cost: "75 Mana",
 			icon: "/images/hero/terra/abilities/e.png",
 			video: "/videos/heroes/terra/e.webm",
+			poster: "/videos/heroes/terra/e.jpg",
 		},
 		{
 			key: "R",
@@ -239,6 +243,7 @@ export const terra: CompleteHero = {
 			cost: "100 Mana",
 			icon: "/images/hero/terra/abilities/r.png",
 			video: "/videos/heroes/terra/r.webm",
+			poster: "/videos/heroes/terra/r.jpg",
 		},
 	],
 };

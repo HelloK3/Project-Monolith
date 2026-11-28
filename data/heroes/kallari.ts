@@ -7,7 +7,7 @@ export const kallari: CompleteHero = {
 	name: "Kallari",
 	slug: "kallari",
 	role: "offlane",
-	description: "A melee fighter built for Offlane.",
+	description: "A stealthy assassin who walks through shadows, cripples her mark with a thrown dagger and finishes them with a death sentence.",
 	heroClass: "Fighter",
 	position: "Offlane",
 	traits: ["Assassin", "Elusive", "Ganker", "Attacker", "Initiator"],
@@ -61,6 +61,7 @@ export const kallari: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/kallari/abilities/lmb.png",
 			video: "/videos/heroes/kallari/lmb.webm",
+			poster: "/videos/heroes/kallari/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -136,6 +137,7 @@ export const kallari: CompleteHero = {
 			cost: "30 Mana",
 			icon: "/images/hero/kallari/abilities/q.png",
 			video: "/videos/heroes/kallari/q.webm",
+			poster: "/videos/heroes/kallari/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -208,6 +210,7 @@ export const kallari: CompleteHero = {
 			cost: "50 / 60 / 70 / 80 Mana",
 			icon: "/images/hero/kallari/abilities/rmb.png",
 			video: "/videos/heroes/kallari/rmb.webm",
+			poster: "/videos/heroes/kallari/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -246,6 +249,7 @@ export const kallari: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/kallari/abilities/e.png",
 			video: "/videos/heroes/kallari/e.webm",
+			poster: "/videos/heroes/kallari/e.jpg",
 		},
 		{
 			key: "R",
@@ -322,6 +326,7 @@ export const kallari: CompleteHero = {
 			cost: "100 Mana",
 			icon: "/images/hero/kallari/abilities/r.png",
 			video: "/videos/heroes/kallari/r.webm",
+			poster: "/videos/heroes/kallari/r.jpg",
 		},
 	],
 	skins: [

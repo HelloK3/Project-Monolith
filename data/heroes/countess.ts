@@ -7,7 +7,7 @@ export const countess: CompleteHero = {
 	name: "Countess",
 	slug: "countess",
 	role: "mid",
-	description: "A melee fighter built for Mid Lane who can also flex to Offlane.",
+	description: "A shadow assassin who blinks onto her prey, bursts them down with dark magic and heals from every kill.",
 	heroClass: "Fighter",
 	position: "Mid Lane / Offlane",
 	traits: ["Assassin", "Burst", "Sieger", "Ganker", "Durable"],
@@ -61,6 +61,7 @@ export const countess: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/countess/abilities/lmb.png",
 			video: "/videos/heroes/countess/lmb.webm",
+			poster: "/videos/heroes/countess/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -141,6 +142,7 @@ export const countess: CompleteHero = {
 			cost: "80 Mana",
 			icon: "/images/hero/countess/abilities/q.png",
 			video: "/videos/heroes/countess/q.webm",
+			poster: "/videos/heroes/countess/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -221,6 +223,7 @@ export const countess: CompleteHero = {
 			cost: "90 / 100 / 110 / 120 Mana",
 			icon: "/images/hero/countess/abilities/rmb.png",
 			video: "/videos/heroes/countess/rmb.webm",
+			poster: "/videos/heroes/countess/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -255,6 +258,7 @@ export const countess: CompleteHero = {
 			cost: "110 / 120 / 130 / 140 Mana",
 			icon: "/images/hero/countess/abilities/e.png",
 			video: "/videos/heroes/countess/e.webm",
+			poster: "/videos/heroes/countess/e.jpg",
 		},
 		{
 			key: "R",
@@ -297,6 +301,7 @@ export const countess: CompleteHero = {
 			cost: "120 / 180 / 240 Mana",
 			icon: "/images/hero/countess/abilities/r.png",
 			video: "/videos/heroes/countess/r.webm",
+			poster: "/videos/heroes/countess/r.jpg",
 		},
 	],
 	skins: [

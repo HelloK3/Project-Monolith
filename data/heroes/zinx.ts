@@ -7,7 +7,7 @@ export const zinx: CompleteHero = {
 	name: "Zinx",
 	slug: "zinx",
 	role: "offlane",
-	description: "A ranger built for Offlane who can also flex to Mid Lane.",
+	description: "A feline medic who turns her damage into healing, poisons enemies with Bad Medicine and ricochets stuns between targets.",
 	heroClass: "Ranger",
 	position: "Offlane / Mid Lane",
 	traits: ["Durable", "Attacker", "Controller", "Sieger"],
@@ -61,6 +61,7 @@ export const zinx: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/zinx/abilities/lmb.png",
 			video: "/videos/heroes/zinx/lmb.webm",
+			poster: "/videos/heroes/zinx/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -120,6 +121,7 @@ export const zinx: CompleteHero = {
 			cost: "35 / 41 / 47 / 53 Mana",
 			icon: "/images/hero/zinx/abilities/q.png",
 			video: "/videos/heroes/zinx/q.webm",
+			poster: "/videos/heroes/zinx/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -216,6 +218,7 @@ export const zinx: CompleteHero = {
 			cost: "80 / 100 / 120 / 140 Mana",
 			icon: "/images/hero/zinx/abilities/rmb.png",
 			video: "/videos/heroes/zinx/rmb.webm",
+			poster: "/videos/heroes/zinx/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -296,6 +299,7 @@ export const zinx: CompleteHero = {
 			cost: "80 / 100 / 120 / 140 Mana",
 			icon: "/images/hero/zinx/abilities/e.png",
 			video: "/videos/heroes/zinx/e.webm",
+			poster: "/videos/heroes/zinx/e.jpg",
 		},
 		{
 			key: "R",
@@ -360,6 +364,7 @@ export const zinx: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/zinx/abilities/r.png",
 			video: "/videos/heroes/zinx/r.webm",
+			poster: "/videos/heroes/zinx/r.jpg",
 		},
 	],
 };

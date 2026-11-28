@@ -7,7 +7,7 @@ export const gideon: CompleteHero = {
 	name: "Gideon",
 	slug: "gideon",
 	role: "mid",
-	description: "A ranged ranger built for Mid Lane who can also flex to Offlane.",
+	description: "A cosmic sorcerer who tears holes in space, blinks through rifts and swallows teamfights with a black hole.",
 	heroClass: "Ranger",
 	position: "Mid Lane / Offlane",
 	traits: ["Burst", "Assassin", "Elusive", "Sieger"],
@@ -61,6 +61,7 @@ export const gideon: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/gideon/abilities/lmb.png",
 			video: "/videos/heroes/gideon/lmb.webm",
+			poster: "/videos/heroes/gideon/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -91,6 +92,7 @@ export const gideon: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/gideon/abilities/q.png",
 			video: "/videos/heroes/gideon/q.webm",
+			poster: "/videos/heroes/gideon/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -163,6 +165,7 @@ export const gideon: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/gideon/abilities/rmb.png",
 			video: "/videos/heroes/gideon/rmb.webm",
+			poster: "/videos/heroes/gideon/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -180,6 +183,7 @@ export const gideon: CompleteHero = {
 			cost: "60 Mana",
 			icon: "/images/hero/gideon/abilities/e.png",
 			video: "/videos/heroes/gideon/e.webm",
+			poster: "/videos/heroes/gideon/e.jpg",
 		},
 		{
 			key: "R",
@@ -261,6 +265,7 @@ export const gideon: CompleteHero = {
 			cost: "140 / 210 / 280 Mana",
 			icon: "/images/hero/gideon/abilities/r.png",
 			video: "/videos/heroes/gideon/r.webm",
+			poster: "/videos/heroes/gideon/r.jpg",
 		},
 	],
 	skins: [

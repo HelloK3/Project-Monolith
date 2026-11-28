@@ -7,7 +7,7 @@ export const phase: CompleteHero = {
 	name: "Phase",
 	slug: "phase",
 	role: "support",
-	description: "A ranger built for Support.",
+	description: "A telekinetic support who links to an ally to heal them and pull them to safety, blinds attackers and fires an energy lance through the enemy team.",
 	heroClass: "Ranger",
 	position: "Support",
 	traits: ["Guardian", "Controller", "Durable", "Elusive"],
@@ -61,6 +61,7 @@ export const phase: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/phase/abilities/lmb.png",
 			video: "/videos/heroes/phase/lmb.webm",
+			poster: "/videos/heroes/phase/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const phase: CompleteHero = {
 			cost: "90 / 100 / 110 / 120 Mana",
 			icon: "/images/hero/phase/abilities/q.png",
 			video: "/videos/heroes/phase/q.webm",
+			poster: "/videos/heroes/phase/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -170,6 +172,7 @@ export const phase: CompleteHero = {
 			cost: "100 Mana",
 			icon: "/images/hero/phase/abilities/rmb.png",
 			video: "/videos/heroes/phase/rmb.webm",
+			poster: "/videos/heroes/phase/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -300,6 +303,7 @@ export const phase: CompleteHero = {
 			cost: "110 / 130 / 150 / 170 Mana",
 			icon: "/images/hero/phase/abilities/e.png",
 			video: "/videos/heroes/phase/e.webm",
+			poster: "/videos/heroes/phase/e.jpg",
 		},
 		{
 			key: "R",
@@ -393,6 +397,7 @@ export const phase: CompleteHero = {
 			cost: "100 / 150 / 200 Mana",
 			icon: "/images/hero/phase/abilities/r.png",
 			video: "/videos/heroes/phase/r.webm",
+			poster: "/videos/heroes/phase/r.jpg",
 		},
 	],
 };

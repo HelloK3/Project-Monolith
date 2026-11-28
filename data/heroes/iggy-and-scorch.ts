@@ -7,7 +7,7 @@ export const iggyAndScorch: CompleteHero = {
 	name: "Iggy & Scorch",
 	slug: "iggy-and-scorch",
 	role: "offlane",
-	description: "A ranged ranger built for Offlane who can also flex to Mid Lane.",
+	description: "A pyromaniac and his lizard who set the lane on fire with turrets, molotovs and a scorching ultimate.",
 	heroClass: "Ranger",
 	position: "Offlane / Mid Lane",
 	traits: ["Zoner", "Sieger", "Elusive"],
@@ -61,6 +61,7 @@ export const iggyAndScorch: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/iggy-and-scorch/abilities/lmb.png",
 			video: "/videos/heroes/iggy-and-scorch/lmb.webm",
+			poster: "/videos/heroes/iggy-and-scorch/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -127,6 +128,7 @@ export const iggyAndScorch: CompleteHero = {
 			cost: "70 Mana",
 			icon: "/images/hero/iggy-and-scorch/abilities/q.png",
 			video: "/videos/heroes/iggy-and-scorch/q.webm",
+			poster: "/videos/heroes/iggy-and-scorch/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -194,6 +196,7 @@ export const iggyAndScorch: CompleteHero = {
 			cost: "110 / 120 / 130 / 140 Mana",
 			icon: "/images/hero/iggy-and-scorch/abilities/rmb.png",
 			video: "/videos/heroes/iggy-and-scorch/rmb.webm",
+			poster: "/videos/heroes/iggy-and-scorch/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -252,6 +255,7 @@ export const iggyAndScorch: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/iggy-and-scorch/abilities/e.png",
 			video: "/videos/heroes/iggy-and-scorch/e.webm",
+			poster: "/videos/heroes/iggy-and-scorch/e.jpg",
 		},
 		{
 			key: "R",
@@ -336,6 +340,7 @@ export const iggyAndScorch: CompleteHero = {
 			cost: "100 Mana",
 			icon: "/images/hero/iggy-and-scorch/abilities/r.png",
 			video: "/videos/heroes/iggy-and-scorch/r.webm",
+			poster: "/videos/heroes/iggy-and-scorch/r.jpg",
 		},
 	],
 	skins: [

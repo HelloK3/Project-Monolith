@@ -7,7 +7,7 @@ export const howitzer: CompleteHero = {
 	name: "Howitzer",
 	slug: "howitzer",
 	role: "offlane",
-	description: "A ranged ranger built for Offlane who can also flex to Mid Lane.",
+	description: "A long-range artillery expert who zones lanes with mines and missiles, then makes it rain.",
 	heroClass: "Ranger",
 	position: "Offlane / Mid Lane",
 	traits: ["Sieger", "Elusive", "Burst", "Zoner"],
@@ -69,6 +69,7 @@ export const howitzer: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/howitzer/abilities/lmb.png",
 			video: "/videos/heroes/howitzer/lmb.webm",
+			poster: "/videos/heroes/howitzer/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const howitzer: CompleteHero = {
 			cost: "110 / 120 / 130 / 140 Mana",
 			icon: "/images/hero/howitzer/abilities/q.png",
 			video: "/videos/heroes/howitzer/q.webm",
+			poster: "/videos/heroes/howitzer/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -183,6 +185,7 @@ export const howitzer: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/howitzer/abilities/rmb.png",
 			video: "/videos/heroes/howitzer/rmb.webm",
+			poster: "/videos/heroes/howitzer/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -225,6 +228,7 @@ export const howitzer: CompleteHero = {
 			cost: "110 Mana",
 			icon: "/images/hero/howitzer/abilities/e.png",
 			video: "/videos/heroes/howitzer/e.webm",
+			poster: "/videos/heroes/howitzer/e.jpg",
 		},
 		{
 			key: "R",
@@ -275,6 +279,7 @@ export const howitzer: CompleteHero = {
 			cost: "125 / 200 / 275 Mana",
 			icon: "/images/hero/howitzer/abilities/r.png",
 			video: "/videos/heroes/howitzer/r.webm",
+			poster: "/videos/heroes/howitzer/r.jpg",
 		},
 	],
 	skins: [

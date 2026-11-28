@@ -7,7 +7,7 @@ export const fengMao: CompleteHero = {
 	name: "Feng Mao",
 	slug: "feng-mao",
 	role: "offlane",
-	description: "A melee fighter built for Offlane who can also flex to Jungle.",
+	description: "A disciplined swordsman who dashes through the lane, shields himself and cripples anyone caught by his blade.",
 	heroClass: "Fighter",
 	position: "Offlane / Jungle",
 	traits: ["Attacker", "Durable", "Assassin", "Elusive", "Wild", "Ganker"],
@@ -61,6 +61,7 @@ export const fengMao: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/feng-mao/abilities/lmb.png",
 			video: "/videos/heroes/feng-mao/lmb.webm",
+			poster: "/videos/heroes/feng-mao/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -103,6 +104,7 @@ export const fengMao: CompleteHero = {
 			cost: "40 Mana",
 			icon: "/images/hero/feng-mao/abilities/q.png",
 			video: "/videos/heroes/feng-mao/q.webm",
+			poster: "/videos/heroes/feng-mao/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -136,6 +138,7 @@ export const fengMao: CompleteHero = {
 			cost: "60 Mana",
 			icon: "/images/hero/feng-mao/abilities/rmb.png",
 			video: "/videos/heroes/feng-mao/rmb.webm",
+			poster: "/videos/heroes/feng-mao/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -211,6 +214,7 @@ export const fengMao: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/feng-mao/abilities/e.png",
 			video: "/videos/heroes/feng-mao/e.webm",
+			poster: "/videos/heroes/feng-mao/e.jpg",
 		},
 		{
 			key: "R",
@@ -253,6 +257,7 @@ export const fengMao: CompleteHero = {
 			cost: "70 / 105 / 140 Mana",
 			icon: "/images/hero/feng-mao/abilities/r.png",
 			video: "/videos/heroes/feng-mao/r.webm",
+			poster: "/videos/heroes/feng-mao/r.jpg",
 		},
 	],
 	skins: [

@@ -7,7 +7,7 @@ export const muriel: CompleteHero = {
 	name: "Muriel",
 	slug: "muriel",
 	role: "support",
-	description: "A ranged ranger built for Support.",
+	description: "A guardian angel who shields allies, flies to their side from anywhere and reverses the fortune of a lost fight.",
 	heroClass: "Ranger",
 	position: "Support",
 	traits: ["Guardian", "Durable", "Zoner"],
@@ -61,6 +61,7 @@ export const muriel: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/muriel/abilities/lmb.png",
 			video: "/videos/heroes/muriel/lmb.webm",
+			poster: "/videos/heroes/muriel/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -133,6 +134,7 @@ export const muriel: CompleteHero = {
 			cost: "75 / 85 / 95 / 105 Mana",
 			icon: "/images/hero/muriel/abilities/q.png",
 			video: "/videos/heroes/muriel/q.webm",
+			poster: "/videos/heroes/muriel/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -192,6 +194,7 @@ export const muriel: CompleteHero = {
 			cost: "70 Mana",
 			icon: "/images/hero/muriel/abilities/rmb.png",
 			video: "/videos/heroes/muriel/rmb.webm",
+			poster: "/videos/heroes/muriel/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -251,6 +254,7 @@ export const muriel: CompleteHero = {
 			cost: "100 / 115 / 130 / 145 Mana",
 			icon: "/images/hero/muriel/abilities/e.png",
 			video: "/videos/heroes/muriel/e.webm",
+			poster: "/videos/heroes/muriel/e.jpg",
 		},
 		{
 			key: "R",
@@ -323,6 +327,7 @@ export const muriel: CompleteHero = {
 			cost: "150 / 225 / 300 Mana",
 			icon: "/images/hero/muriel/abilities/r.png",
 			video: "/videos/heroes/muriel/r.webm",
+			poster: "/videos/heroes/muriel/r.jpg",
 		},
 	],
 	skins: [

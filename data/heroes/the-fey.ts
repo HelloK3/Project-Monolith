@@ -7,7 +7,7 @@ export const theFey: CompleteHero = {
 	name: "The Fey",
 	slug: "the-fey",
 	role: "support",
-	description: "A ranged ranger built for Support who can also flex to Mid Lane.",
+	description: "A forest spirit who grows brambles and nettles across the lane and drags enemies into a fly trap.",
 	heroClass: "Ranger",
 	position: "Support / Mid Lane",
 	traits: ["Controller", "Guardian", "Sieger", "Burst"],
@@ -61,6 +61,7 @@ export const theFey: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/the-fey/abilities/lmb.png",
 			video: "/videos/heroes/the-fey/lmb.webm",
+			poster: "/videos/heroes/the-fey/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -133,6 +134,7 @@ export const theFey: CompleteHero = {
 			cost: "110 Mana",
 			icon: "/images/hero/the-fey/abilities/q.png",
 			video: "/videos/heroes/the-fey/q.webm",
+			poster: "/videos/heroes/the-fey/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -183,6 +185,7 @@ export const theFey: CompleteHero = {
 			cost: "100 / 110 / 120 / 130 Mana",
 			icon: "/images/hero/the-fey/abilities/rmb.png",
 			video: "/videos/heroes/the-fey/rmb.webm",
+			poster: "/videos/heroes/the-fey/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -254,6 +257,7 @@ export const theFey: CompleteHero = {
 			cost: "90 / 100 / 110 / 120 Mana",
 			icon: "/images/hero/the-fey/abilities/e.png",
 			video: "/videos/heroes/the-fey/e.webm",
+			poster: "/videos/heroes/the-fey/e.jpg",
 		},
 		{
 			key: "R",
@@ -309,6 +313,7 @@ export const theFey: CompleteHero = {
 			cost: "100 / 150 / 200 Mana",
 			icon: "/images/hero/the-fey/abilities/r.png",
 			video: "/videos/heroes/the-fey/r.webm",
+			poster: "/videos/heroes/the-fey/r.jpg",
 		},
 	],
 	skins: [

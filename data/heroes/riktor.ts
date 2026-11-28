@@ -7,7 +7,7 @@ export const riktor: CompleteHero = {
 	name: "Riktor",
 	slug: "riktor",
 	role: "support",
-	description: "A melee fighter built for Support.",
+	description: "A cybernetic hunter who hooks enemies across the battlefield and shocks them into submission.",
 	heroClass: "Fighter",
 	position: "Support",
 	traits: ["Controller", "Guardian", "Assassin", "Ganker"],
@@ -61,6 +61,7 @@ export const riktor: CompleteHero = {
 			cost: "—",
 			icon: "/images/hero/riktor/abilities/lmb.png",
 			video: "/videos/heroes/riktor/lmb.webm",
+			poster: "/videos/heroes/riktor/lmb.jpg",
 		},
 		{
 			key: "Q",
@@ -146,6 +147,7 @@ export const riktor: CompleteHero = {
 			cost: "40 Mana",
 			icon: "/images/hero/riktor/abilities/q.png",
 			video: "/videos/heroes/riktor/q.webm",
+			poster: "/videos/heroes/riktor/q.jpg",
 		},
 		{
 			key: "RMB",
@@ -201,6 +203,7 @@ export const riktor: CompleteHero = {
 			cost: "110 Mana",
 			icon: "/images/hero/riktor/abilities/rmb.png",
 			video: "/videos/heroes/riktor/rmb.webm",
+			poster: "/videos/heroes/riktor/rmb.jpg",
 		},
 		{
 			key: "E",
@@ -243,6 +246,7 @@ export const riktor: CompleteHero = {
 			cost: "65 / 70 / 75 / 80 Mana",
 			icon: "/images/hero/riktor/abilities/e.png",
 			video: "/videos/heroes/riktor/e.webm",
+			poster: "/videos/heroes/riktor/e.jpg",
 		},
 		{
 			key: "R",
@@ -307,6 +311,7 @@ export const riktor: CompleteHero = {
 			cost: "75 / 100 / 125 Mana",
 			icon: "/images/hero/riktor/abilities/r.png",
 			video: "/videos/heroes/riktor/r.webm",
+			poster: "/videos/heroes/riktor/r.jpg",
 		},
 	],
 	skins: [
